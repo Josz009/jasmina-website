@@ -59,8 +59,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section style={{ padding: "100px 56px", background: "var(--color-off-white)" }}>
-        <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 64, alignItems: "start" }}>
+      <section className="about-story-section" style={{ padding: "100px 56px", background: "var(--color-off-white)" }}>
+        <div className="about-story-grid" style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1.4fr", gap: 64, alignItems: "start" }}>
           <div style={{ position: "relative" }}>
             <Image src="/images/about-primary.jpg" alt="Jasmina Kolekjeska" width={480} height={600} style={{ width: "100%", height: "auto", borderRadius: 4, boxShadow: "0 16px 48px rgba(26,16,40,0.08)" }} />
             <div style={{ position: "absolute", top: 12, left: 12, right: -12, bottom: -12, border: "1.5px solid var(--color-gold)", borderRadius: 4, zIndex: -1, opacity: 0.3 }} />
@@ -88,7 +88,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section style={{ padding: "100px 56px", background: "#241838" }}>
+      <section className="about-timeline-section" style={{ padding: "100px 56px", background: "#241838" }}>
         <div style={{ maxWidth: 800, margin: "0 auto" }}>
           <div style={{ textAlign: "center", marginBottom: 64 }}>
             <span className="sec-tag sec-tag-gold">professional journey</span>
@@ -113,7 +113,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section style={{ padding: "100px 56px", background: "var(--color-off-white)" }}>
+      <section className="about-values-section" style={{ padding: "100px 56px", background: "var(--color-off-white)" }}>
         <div style={{ maxWidth: 1100, margin: "0 auto" }}>
           <div style={{ textAlign: "center", maxWidth: 700, margin: "0 auto 64px" }}>
             <span className="sec-tag sec-tag-gold">guiding principles</span>
@@ -132,19 +132,33 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section style={{ padding: "80px 56px", background: "var(--color-cream)", textAlign: "center" }}>
+      {/* Decorative Divider */}
+      <div style={{ background: "var(--color-off-white)", padding: "32px 0" }}>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 16, padding: "0 56px" }}>
+          <div style={{ flex: 1, maxWidth: 200, height: 1, background: "linear-gradient(90deg, transparent, rgba(201,149,43,0.2))" }} />
+          <svg viewBox="0 0 20 20" fill="none" style={{ width: 12, height: 12 }}><rect x="4" y="4" width="12" height="12" transform="rotate(45 10 10)" stroke="rgba(201,149,43,0.3)" strokeWidth="1" /></svg>
+          <svg viewBox="0 0 20 20" fill="none" style={{ width: 16, height: 16 }}><rect x="4" y="4" width="12" height="12" transform="rotate(45 10 10)" fill="rgba(201,149,43,0.15)" /></svg>
+          <svg viewBox="0 0 20 20" fill="none" style={{ width: 12, height: 12 }}><rect x="4" y="4" width="12" height="12" transform="rotate(45 10 10)" stroke="rgba(201,149,43,0.3)" strokeWidth="1" /></svg>
+          <div style={{ flex: 1, maxWidth: 200, height: 1, background: "linear-gradient(90deg, rgba(201,149,43,0.2), transparent)" }} />
+        </div>
+      </div>
+
+      {/* CTA Section */}
+      <section className="about-cta" style={{ padding: "80px 56px", background: "linear-gradient(180deg, var(--color-off-white) 0%, #241838 100%)", textAlign: "center" }}>
         <div style={{ maxWidth: 600, margin: "0 auto" }}>
-          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: 400, color: "var(--color-deep)", marginBottom: 16, lineHeight: 1.2 }}>
+          <span className="sec-tag sec-tag-gold" style={{ marginBottom: 16 }}>let&apos;s connect</span>
+          <h2 style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: 400, color: "#fff", marginBottom: 16, lineHeight: 1.2 }}>
             Ready to Work <em style={{ fontStyle: "italic", color: "var(--color-gold)" }}>Together?</em>
           </h2>
-          <p style={{ fontSize: "0.92rem", lineHeight: 1.8, color: "var(--color-body)", marginBottom: 32 }}>
+          <div style={{ width: 40, height: 1, background: "var(--color-gold)", margin: "0 auto 24px" }} />
+          <p style={{ fontSize: "0.92rem", lineHeight: 1.8, color: "rgba(250,246,238,0.55)", marginBottom: 36 }}>
             Whether you need financial analysis, portfolio guidance, or executive coaching — let&apos;s start with a conversation.
           </p>
-          <Link href="/#contact" style={{ display: "inline-block", background: "var(--color-gold)", color: "var(--color-deep)", padding: "14px 40px", fontFamily: "var(--font-body)", fontSize: "0.78rem", fontWeight: 700, textDecoration: "none", letterSpacing: "1.5px", textTransform: "uppercase" as const, borderRadius: 2 }}>
+          <Link href="/#contact" style={{ display: "inline-block", background: "var(--color-gold)", color: "var(--color-deep)", padding: "14px 44px", fontFamily: "var(--font-body)", fontSize: "0.78rem", fontWeight: 700, textDecoration: "none", letterSpacing: "1.5px", textTransform: "uppercase" as const, borderRadius: 2, transition: "all 0.3s" }}>
             Schedule a Consultation
           </Link>
-          <div style={{ marginTop: 16 }}>
-            <Link href="/" style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "1px", textTransform: "uppercase" as const, color: "var(--color-body-light)", textDecoration: "none" }}>
+          <div style={{ marginTop: 20 }}>
+            <Link href="/" style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "1px", textTransform: "uppercase" as const, color: "rgba(250,246,238,0.35)", textDecoration: "none", transition: "color 0.3s" }}>
               &larr; Back to Home
             </Link>
           </div>

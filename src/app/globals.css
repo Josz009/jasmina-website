@@ -1489,6 +1489,10 @@ footer .footer-copy {
   .blog-featured { grid-template-columns: 1fr !important; }
   .sp-benefits-grid { grid-template-columns: 1fr !important; }
 
+  /* About page grids */
+  .about-story-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .values-grid { grid-template-columns: 1fr !important; }
+
   /* Homepage grids */
   .trust-grid { grid-template-columns: repeat(3, 1fr) !important; }
   .results-grid { grid-template-columns: 1fr !important; }
@@ -1539,8 +1543,13 @@ footer .footer-copy {
   .res-stats-bar > div > div { padding: 20px 16px !important; flex-wrap: wrap !important; gap: 16px; }
   .res-stat { min-width: 45% !important; border-right: none !important; }
 
+  /* About page */
+  .about-hero-content { padding: 100px 24px 60px !important; }
+  .about-story-grid > div:first-child > div { display: none; } /* hide decorative border offset on tablet */
+
   /* Service page process section */
   .sp-process-list { padding: 0 !important; }
+  .sp-process-section > div:last-child { padding: 48px 32px !important; }
 
   /* Blog featured */
   .blog-featured > div:last-child { padding: 28px 24px !important; }
@@ -1552,12 +1561,16 @@ footer .footer-copy {
 
 @media (max-width: 768px) {
   /* Service page: stack process section */
-  .sp-process-section { grid-template-columns: 1fr !important; }
+  .sp-process-section { grid-template-columns: 1fr !important; min-height: auto !important; }
   .sp-process-section > div:first-child { min-height: 250px !important; }
   .sp-process-section > div:last-child { padding: 40px 24px !important; }
 
   /* About page timeline */
   .about-timeline { padding-left: 24px !important; padding-right: 24px !important; }
+
+  /* About page vertical padding reduction */
+  .about-story-grid { gap: 32px !important; }
+  .value-card { padding: 28px 24px !important; }
 }
 
 @media (max-width: 600px) {
@@ -1582,12 +1595,14 @@ footer .footer-copy {
   .res-hero-content h1,
   .faq-hero-content h1,
   .blog-hero-content h1,
-  .sp-hero-content h1 { font-size: 2.2rem !important; }
+  .sp-hero-content h1,
+  .about-hero-content h1 { font-size: 2rem !important; }
 
   .res-hero-content,
   .faq-hero-content,
   .blog-hero-content,
-  .sp-hero-content { padding-top: 100px !important; padding-bottom: 60px !important; }
+  .sp-hero-content,
+  .about-hero-content { padding-top: 100px !important; padding-bottom: 50px !important; }
 
   /* All grids go single column */
   .blog-grid,
@@ -1595,6 +1610,25 @@ footer .footer-copy {
 
   /* All section paddings */
   section { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* About page mobile */
+  .about-story-grid { gap: 24px !important; }
+  .about-story-grid > div:first-child > div { display: none; }
+  .values-grid { gap: 16px !important; }
+  .value-card { padding: 24px 20px !important; }
+  .timeline-item { gap: 20px !important; margin-bottom: 28px !important; }
+  .timeline-item h4 { font-size: 1rem !important; }
+
+  /* Result card metric font-size reduction */
+  .result-card > div:first-child { font-size: 2.2rem !important; }
+
+  /* Service page process section mobile spacing */
+  .sp-process-section > div:first-child { min-height: 200px !important; }
+  .sp-process-section > div:last-child { padding: 32px 20px !important; }
+  .sp-process-section h2 { font-size: 1.6rem !important; }
+
+  /* Article hero mobile */
+  .article-hero-content > div:last-child { flex-direction: column !important; gap: 8px !important; }
 
   /* FAQ content */
   .faq-category-block > div:last-child { padding-left: 16px !important; padding-right: 16px !important; }
@@ -1616,10 +1650,19 @@ footer .footer-copy {
   /* CTA sections */
   .faq-cta h2,
   .res-cta h2,
-  .blog-newsletter h2 { font-size: 1.8rem !important; }
+  .blog-newsletter h2,
+  .about-cta h2 { font-size: 1.8rem !important; }
   .faq-cta,
   .res-cta,
-  .blog-newsletter { padding-left: 20px !important; padding-right: 20px !important; }
+  .blog-newsletter,
+  .about-cta { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* About page section padding reduction */
+  .about-story-section { padding: 60px 20px !important; }
+  .about-timeline-section { padding: 60px 20px !important; }
+  .about-values-section { padding: 60px 20px !important; }
+  .about-timeline-section .sec-title { font-size: 1.6rem !important; }
+  .about-values-section .sec-title { font-size: 1.6rem !important; }
 
   /* Newsletter email form stack */
   .newsletter-form { flex-direction: column !important; }
