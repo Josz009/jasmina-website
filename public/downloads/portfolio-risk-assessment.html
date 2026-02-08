@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Risk Assessment Framework — Jasmina Kolekjeska</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Open+Sans:wght@400;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Open Sans', sans-serif; color: #3a3344; background: #FAF6EE; line-height: 1.7; }
+  .container { max-width: 800px; margin: 0 auto; padding: 60px 40px; }
+  .header { text-align: center; margin-bottom: 48px; padding-bottom: 32px; border-bottom: 2px solid #C9952B; }
+  .header h1 { font-family: 'Cormorant Garamond', serif; font-size: 2.4rem; font-weight: 400; color: #1a1028; margin-bottom: 8px; }
+  .header p { font-size: 0.85rem; color: #C9952B; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+  .header .subtitle { font-size: 0.95rem; color: #6b5f7a; font-weight: 400; letter-spacing: 0; text-transform: none; margin-top: 12px; }
+  h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; color: #1a1028; margin: 40px 0 16px; padding-bottom: 8px; border-bottom: 1px solid rgba(201,149,43,0.2); }
+  h3 { font-size: 1.05rem; font-weight: 700; color: #1a1028; margin: 24px 0 8px; }
+  p { margin-bottom: 12px; font-size: 0.92rem; }
+  table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 0.88rem; }
+  th { background: #1a1028; color: #FAF6EE; padding: 10px 12px; text-align: left; font-weight: 600; font-size: 0.78rem; letter-spacing: 1px; text-transform: uppercase; }
+  td { padding: 10px 12px; border-bottom: 1px solid rgba(201,149,43,0.1); }
+  tr:nth-child(even) td { background: rgba(201,149,43,0.04); }
+  .input-row td:last-child { border-bottom: 1px dashed #C9952B; min-width: 120px; }
+  .note { background: rgba(201,149,43,0.08); padding: 16px 20px; border-left: 3px solid #C9952B; margin: 24px 0; font-size: 0.88rem; font-style: italic; }
+  .formula { background: #1a1028; color: #FAF6EE; padding: 12px 20px; border-radius: 4px; font-family: monospace; margin: 16px 0; font-size: 0.88rem; }
+  ul { margin: 12px 0 12px 24px; font-size: 0.92rem; }
+  li { margin-bottom: 6px; }
+  .footer { text-align: center; margin-top: 48px; padding-top: 24px; border-top: 1px solid rgba(201,149,43,0.2); font-size: 0.82rem; color: #6b5f7a; }
+  .footer a { color: #C9952B; text-decoration: none; }
+  @media print { body { background: #fff; } .container { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <p>Jasmina Kolekjeska</p>
+    <h1>Portfolio Risk Assessment Framework</h1>
+    <p class="subtitle">A step-by-step guide to evaluating concentration risk, sector exposure, and correlation</p>
+  </div>
+
+  <h2>Step 1: Position Weighting Analysis</h2>
+  <p>List your top 10 holdings and calculate each position's weight as a percentage of your total portfolio value.</p>
+
+  <table>
+    <tr><th>Holding / Ticker</th><th>Value ($)</th><th>% of Portfolio</th><th>Flag?</th></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr class="input-row"><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  </table>
+
+  <div class="note">
+    <strong>Red flags:</strong> Any single position &gt; 10% of total portfolio. Top 3 positions &gt; 30% combined. Top 5 positions &gt; 50% combined.
+  </div>
+
+  <h2>Step 2: Sector Exposure Mapping</h2>
+  <p>Categorize each holding by sector and calculate your total exposure to each sector.</p>
+
+  <table>
+    <tr><th>Sector</th><th>Total Value ($)</th><th>% of Portfolio</th><th>S&amp;P 500 Weight</th><th>Over/Under</th></tr>
+    <tr><td>Technology</td><td>&nbsp;</td><td>&nbsp;</td><td>~29%</td><td>&nbsp;</td></tr>
+    <tr><td>Healthcare</td><td>&nbsp;</td><td>&nbsp;</td><td>~13%</td><td>&nbsp;</td></tr>
+    <tr><td>Financials</td><td>&nbsp;</td><td>&nbsp;</td><td>~13%</td><td>&nbsp;</td></tr>
+    <tr><td>Consumer Discretionary</td><td>&nbsp;</td><td>&nbsp;</td><td>~10%</td><td>&nbsp;</td></tr>
+    <tr><td>Communication Services</td><td>&nbsp;</td><td>&nbsp;</td><td>~9%</td><td>&nbsp;</td></tr>
+    <tr><td>Industrials</td><td>&nbsp;</td><td>&nbsp;</td><td>~8%</td><td>&nbsp;</td></tr>
+    <tr><td>Consumer Staples</td><td>&nbsp;</td><td>&nbsp;</td><td>~6%</td><td>&nbsp;</td></tr>
+    <tr><td>Energy</td><td>&nbsp;</td><td>&nbsp;</td><td>~4%</td><td>&nbsp;</td></tr>
+    <tr><td>Utilities</td><td>&nbsp;</td><td>&nbsp;</td><td>~3%</td><td>&nbsp;</td></tr>
+    <tr><td>Real Estate</td><td>&nbsp;</td><td>&nbsp;</td><td>~2%</td><td>&nbsp;</td></tr>
+    <tr><td>Materials</td><td>&nbsp;</td><td>&nbsp;</td><td>~2%</td><td>&nbsp;</td></tr>
+  </table>
+
+  <h2>Step 3: Factor Exposure Analysis</h2>
+  <p>Assess how your portfolio is exposed to common return factors.</p>
+
+  <table>
+    <tr><th>Factor</th><th>Your Tilt</th><th>Risk Consideration</th></tr>
+    <tr><td>Growth vs. Value</td><td>&nbsp;</td><td>Growth stocks are more rate-sensitive</td></tr>
+    <tr><td>Large Cap vs. Small Cap</td><td>&nbsp;</td><td>Small caps are more volatile, less liquid</td></tr>
+    <tr><td>Domestic vs. International</td><td>&nbsp;</td><td>Currency risk, political risk, but diversification benefit</td></tr>
+    <tr><td>Developed vs. Emerging Markets</td><td>&nbsp;</td><td>Higher growth potential, higher volatility</td></tr>
+    <tr><td>Cyclical vs. Defensive</td><td>&nbsp;</td><td>Cyclicals drop more in recessions</td></tr>
+  </table>
+
+  <h2>Step 4: Correlation Assessment</h2>
+  <p>Estimate or calculate the correlation between your 5 largest positions. Use a scale of -1 (perfectly inverse) to +1 (perfectly correlated).</p>
+
+  <div class="note">
+    <strong>Where to find correlation data:</strong> Portfolio Visualizer (free), Morningstar (premium), or your brokerage's research tools.
+  </div>
+
+  <h3>Interpretation Guide</h3>
+  <ul>
+    <li><strong>0.70 to 1.00:</strong> Highly correlated — these positions behave as a single bet</li>
+    <li><strong>0.40 to 0.69:</strong> Moderately correlated — some diversification benefit</li>
+    <li><strong>0.00 to 0.39:</strong> Low correlation — good diversification</li>
+    <li><strong>-0.01 to -1.00:</strong> Negative correlation — excellent hedge</li>
+  </ul>
+
+  <h2>Step 5: Stress Test Scenarios</h2>
+  <p>Estimate how your portfolio would perform in these historical scenarios:</p>
+
+  <table>
+    <tr><th>Scenario</th><th>Estimated Portfolio Loss</th><th>Recovery Time Estimate</th></tr>
+    <tr><td>2008 Financial Crisis (S&P -57%)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>2020 COVID Crash (S&P -34%)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>2022 Rate Hike Selloff (S&P -25%)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Sector-specific crisis (your top sector -40%)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+    <tr><td>Single stock blow-up (largest position -80%)</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+  </table>
+
+  <h2>Step 6: Action Items</h2>
+  <p>Based on your analysis, identify specific steps to optimize your portfolio:</p>
+
+  <ul>
+    <li>Positions to reduce: _______________</li>
+    <li>Sectors to trim: _______________</li>
+    <li>Uncorrelated assets to add: _______________</li>
+    <li>Rebalancing frequency: _______________</li>
+    <li>Maximum position size rule: _______________</li>
+  </ul>
+
+  <div class="note">
+    <strong>Remember:</strong> The goal isn't to eliminate all concentration — it's to ensure your concentration is intentional, understood, and appropriate for your risk tolerance and financial goals. For a personalized portfolio risk assessment, consider working with an independent advisor who can provide detailed analysis tailored to your situation.
+  </div>
+
+  <div class="footer">
+    <p>&copy; Jasmina Kolekjeska — Financial Advisory &amp; Business Consulting</p>
+    <p style="margin-top: 4px;"><a href="https://jasminakolekjeska.com">jasminakolekjeska.com</a> &nbsp;|&nbsp; For personalized guidance, schedule a consultation</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+"use client";
+
+import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+export default function Contact() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+
+  useEffect(() => {
+    if (!sectionRef.current) return;
+
+    const ctx = gsap.context(() => {
+      gsap.from(".contact-info > *", {
+        opacity: 0, y: 25, duration: 0.6, stagger: 0.1,
+        scrollTrigger: { trigger: ".contact-info", start: "top 75%" },
+      });
+
+      gsap.from(".contact-form-wrap > *", {
+        opacity: 0, y: 25, duration: 0.6, stagger: 0.1,
+        scrollTrigger: { trigger: ".contact-form-wrap", start: "top 75%" },
+      });
+
+      gsap.from(".ci-photo img", {
+        opacity: 0, scale: 0.9, duration: 0.6,
+        scrollTrigger: { trigger: ".ci-photo", start: "top 85%" },
+      });
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    // Simulate form submission — replace with actual API endpoint
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    setSubmitted(true);
+    setSubmitting(false);
+  };
+
+  return (
+    <section id="contact" ref={sectionRef}>
+      <div className="contact">
+        <div className="contact-info">
+          <span className="sec-tag sec-tag-gold">connect</span>
+          <h2>
+            Let&apos;s Discuss Your <em>Tailored Strategy.</em>
+          </h2>
+          <p>
+            Contact me to discuss how I can help navigate the complexities of your
+            financial life and decision-making.
+          </p>
+
+          <div className="ci-item">
+            <div className="ci-icon">
+              <svg viewBox="0 0 24 24">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="M22 4L12 13 2 4" />
+              </svg>
+            </div>
+            <a href="mailto:jasminavigil79@gmail.com">jasminavigil79@gmail.com</a>
+          </div>
+
+          <div className="ci-item">
+            <div className="ci-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+            </div>
+            <a href="tel:3462573921">346.257.3921</a>
+          </div>
+
+          <div className="ci-item">
+            <div className="ci-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <span>Houston, Texas</span>
+          </div>
+
+          <div className="ci-divider" />
+
+          <div className="ci-photo">
+            <Image
+              src="/images/contact.jpg"
+              alt="Jasmina Kolekjeska"
+              width={100}
+              height={100}
+              style={{ borderRadius: "50%", objectFit: "cover", border: "2px solid #C9952B" }}
+            />
+          </div>
+        </div>
+
+        <div className="contact-form-wrap">
+          <h3>Speak with Jasmina.</h3>
+          <p>Fill out the form and I&apos;ll respond within 24 hours.</p>
+
+          {submitted ? (
+            <div style={{ textAlign: "center", padding: "40px 0" }}>
+              <h3 style={{ color: "#C9952B", marginBottom: "12px" }}>Thank you!</h3>
+              <p style={{ color: "#5a4d68", fontSize: "0.92rem" }}>
+                Your message has been sent. I&apos;ll be in touch soon.
+              </p>
+            </div>
+          ) : (
+            <form className="cf" onSubmit={handleSubmit}>
+              <label>Name</label>
+              <input type="text" placeholder="First and last name" required name="name" />
+
+              <label>Email</label>
+              <input type="email" placeholder="your@email.com" required name="email" />
+
+              <label>Phone</label>
+              <input type="tel" placeholder="(000) 000-0000" name="phone" />
+
+              <label>Service Interest</label>
+              <select name="service" defaultValue="">
+                <option value="" disabled>Select a service...</option>
+                <option>Business Acquisition Financial Analysis</option>
+                <option>Portfolio &amp; Trading Risk Advisory</option>
+                <option>Entrepreneur Coaching</option>
+                <option>Not sure yet — let&apos;s talk</option>
+              </select>
+
+              <label>Message</label>
+              <textarea
+                placeholder="Tell me about your goals and how I can help..."
+                name="message"
+              />
+
+              <button className="cf-btn" type="submit" disabled={submitting}>
+                {submitting ? "Sending..." : "Submit"}
+              </button>
+            </form>
+          )}
+        </div>
+      </div>
+    </section>
+  );
+}
