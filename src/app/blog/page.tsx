@@ -192,7 +192,7 @@ export default function BlogPage() {
           <p style={{ fontSize: "0.92rem", lineHeight: 1.8, color: "rgba(250,246,238,0.55)", marginBottom: 36 }}>
             Subscribe to receive practical financial insights, market perspectives, and coaching wisdom — straight to your inbox.
           </p>
-          <div style={{ display: "flex", gap: 12, maxWidth: 460, margin: "0 auto 36px" }}>
+          <div className="newsletter-form" style={{ display: "flex", gap: 12, maxWidth: 460, margin: "0 auto 36px" }}>
             <input type="email" placeholder="Your email address" style={{ flex: 1, padding: "14px 18px", border: "1px solid rgba(201,149,43,0.2)", background: "rgba(255,255,255,0.05)", color: "#fff", fontFamily: "var(--font-body)", fontSize: "0.88rem", borderRadius: 2, outline: "none", transition: "border-color 0.3s" }}
               onFocus={(e) => { e.currentTarget.style.borderColor = "rgba(201,149,43,0.5)"; }}
               onBlur={(e) => { e.currentTarget.style.borderColor = "rgba(201,149,43,0.2)"; }}

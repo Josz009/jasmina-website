@@ -1482,6 +1482,12 @@ footer .footer-copy {
   .test-grid { grid-template-columns: 1fr; }
   .global-regions { grid-template-columns: 1fr; gap: 32px; }
   .stats-inner { grid-template-columns: repeat(2, 1fr); }
+
+  /* Subpage grids */
+  .blog-grid { grid-template-columns: 1fr 1fr !important; }
+  .res-grid { grid-template-columns: 1fr 1fr !important; }
+  .blog-featured { grid-template-columns: 1fr !important; }
+  .sp-benefits-grid { grid-template-columns: 1fr !important; }
 }
 
 @media (max-width: 900px) {
@@ -1503,10 +1509,51 @@ footer .footer-copy {
   .about-img::after { display: none; }
   .stats { padding: 32px 24px; }
 
-  /* Mobile menu styles for service pages */
-  .mobile-menu a {
-    font-size: 1.4rem;
-  }
+  .mobile-menu a { font-size: 1.4rem; }
+
+  /* === Subpage responsive === */
+
+  /* All subpage sections — reduce padding */
+  .res-hero-content,
+  .faq-hero-content,
+  .blog-hero-content,
+  .sp-hero-content { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* Subpage section padding */
+  .faq-main,
+  .res-stats-bar,
+  .blog-section-header { padding-left: 24px !important; padding-right: 24px !important; }
+
+  /* FAQ tabs scroll horizontal */
+  .faq-tabs { justify-content: flex-start !important; padding: 0 16px !important; }
+  .faq-tab { padding: 14px 16px !important; font-size: 0.65rem !important; }
+
+  /* FAQ category blocks */
+  .faq-category-block > div:last-child { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* Stats bar */
+  .res-stats-bar > div > div { padding: 20px 16px !important; flex-wrap: wrap !important; gap: 16px; }
+  .res-stat { min-width: 45% !important; border-right: none !important; }
+
+  /* Service page process section */
+  .sp-process-list { padding: 0 !important; }
+
+  /* Blog featured */
+  .blog-featured > div:last-child { padding: 28px 24px !important; }
+  .blog-featured > div:first-child { min-height: 220px !important; }
+
+  /* Resource cards */
+  .res-card { padding: 28px 20px 28px !important; }
+}
+
+@media (max-width: 768px) {
+  /* Service page: stack process section */
+  .sp-process-section { grid-template-columns: 1fr !important; }
+  .sp-process-section > div:first-child { min-height: 250px !important; }
+  .sp-process-section > div:last-child { padding: 40px 24px !important; }
+
+  /* About page timeline */
+  .about-timeline { padding-left: 24px !important; padding-right: 24px !important; }
 }
 
 @media (max-width: 600px) {
@@ -1519,4 +1566,67 @@ footer .footer-copy {
   .lang-list { gap: 8px; }
   .lang-item { padding: 6px 14px; font-size: 0.65rem; }
   .mobile-menu a { font-size: 1.2rem; gap: 24px; }
+
+  /* === Subpage mobile === */
+
+  /* Hero titles */
+  .res-hero-content h1,
+  .faq-hero-content h1,
+  .blog-hero-content h1,
+  .sp-hero-content h1 { font-size: 2.2rem !important; }
+
+  .res-hero-content,
+  .faq-hero-content,
+  .blog-hero-content,
+  .sp-hero-content { padding-top: 100px !important; padding-bottom: 60px !important; }
+
+  /* All grids go single column */
+  .blog-grid,
+  .res-grid { grid-template-columns: 1fr !important; }
+
+  /* All section paddings */
+  section { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* FAQ content */
+  .faq-category-block > div:last-child { padding-left: 16px !important; padding-right: 16px !important; }
+  .faq-category-block h2 { font-size: 1.3rem !important; }
+
+  /* Blog featured */
+  .blog-featured h2 { font-size: 1.3rem !important; }
+  .blog-featured > div:last-child { padding: 24px 20px !important; }
+
+  /* Resource stats bar */
+  .res-stats-bar > div { transform: translateY(-20px) !important; }
+  .res-stat { min-width: 100% !important; }
+  .res-stats-bar > div > div { flex-direction: column !important; gap: 20px !important; }
+
+  /* Section headers */
+  .res-section-header h2,
+  .blog-section-header h2 { font-size: 1.8rem !important; }
+
+  /* CTA sections */
+  .faq-cta h2,
+  .res-cta h2,
+  .blog-newsletter h2 { font-size: 1.8rem !important; }
+  .faq-cta,
+  .res-cta,
+  .blog-newsletter { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* Newsletter email form stack */
+  .newsletter-form { flex-direction: column !important; }
+
+  /* Service page */
+  .sp-hero-content h1 { font-size: 2rem !important; }
+  .sp-benefits-grid { gap: 20px !important; }
+  .sp-benefit { padding: 24px 20px !important; }
+  .sp-quote-block blockquote { font-size: 1.1rem !important; }
+
+  /* Article pages */
+  .article-hero-content h1 { font-size: 1.8rem !important; }
+  .article-hero-content { padding-top: 100px !important; padding-bottom: 48px !important; }
+  .article-body { padding-left: 20px !important; padding-right: 20px !important; }
+
+  /* Decorative corners — hide on mobile */
+  div[style*="borderTop: \"1px solid rgba(201,149,43"],
+  div[style*="borderBottom: \"1px solid rgba(201,149,43"] { display: none; }
 }

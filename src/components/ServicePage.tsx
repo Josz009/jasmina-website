@@ -195,7 +195,7 @@ export default function ServicePage({
       </section>
 
       {/* Process with image */}
-      <section style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 500 }}>
+      <section className="sp-process-section" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 500 }}>
         <div style={{ position: "relative", overflow: "hidden" }}>
           <Image
             src={detailImage}
