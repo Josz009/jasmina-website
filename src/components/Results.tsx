@@ -68,7 +68,7 @@ export default function Results() {
             Here are examples of the impact my clients have experienced.
           </p>
         </div>
-        <div ref={cardsRef} style={{
+        <div ref={cardsRef} className="results-grid" style={{
           display: "grid",
           gridTemplateColumns: "repeat(3, 1fr)",
           gap: 32,

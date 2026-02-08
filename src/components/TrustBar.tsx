@@ -70,7 +70,7 @@ export default function TrustBar() {
         <span className="sec-tag sec-tag-gold" style={{ marginBottom: 32, display: "block" }}>
           credentials & certifications
         </span>
-        <div style={{
+        <div className="trust-grid" style={{
           display: "grid",
           gridTemplateColumns: "repeat(6, 1fr)",
           gap: 24,

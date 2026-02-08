@@ -1488,6 +1488,10 @@ footer .footer-copy {
   .res-grid { grid-template-columns: 1fr 1fr !important; }
   .blog-featured { grid-template-columns: 1fr !important; }
   .sp-benefits-grid { grid-template-columns: 1fr !important; }
+
+  /* Homepage grids */
+  .trust-grid { grid-template-columns: repeat(3, 1fr) !important; }
+  .results-grid { grid-template-columns: 1fr !important; }
 }
 
 @media (max-width: 900px) {
@@ -1566,6 +1570,11 @@ footer .footer-copy {
   .lang-list { gap: 8px; }
   .lang-item { padding: 6px 14px; font-size: 0.65rem; }
   .mobile-menu a { font-size: 1.2rem; gap: 24px; }
+
+  /* Homepage mobile */
+  .trust-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 16px !important; }
+  .results-grid { grid-template-columns: 1fr !important; gap: 20px !important; }
+  .result-card { padding: 28px 20px !important; }
 
   /* === Subpage mobile === */
 
