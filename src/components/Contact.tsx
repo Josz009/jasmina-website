@@ -39,10 +39,23 @@ export default function Contact() {
     e.preventDefault();
     setSubmitting(true);
 
-    // Simulate form submission — replace with actual API endpoint
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const form = e.currentTarget;
+    const formData = new FormData(form);
 
-    setSubmitted(true);
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        form.reset();
+      }
+    } catch {
+      alert("Something went wrong. Please email jasminavigil79@gmail.com directly.");
+    }
+
     setSubmitting(false);
   };
 
@@ -114,6 +127,9 @@ export default function Contact() {
             </div>
           ) : (
             <form className="cf" onSubmit={handleSubmit}>
+              <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+              <input type="hidden" name="subject" value="New Inquiry — Jasmina Kolekjeska Website" />
+              <input type="hidden" name="from_name" value="Jasmina Website Contact Form" />
               <label>Name</label>
               <input type="text" placeholder="First and last name" required name="name" />
 
