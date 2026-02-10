@@ -13,9 +13,9 @@ gsap.registerPlugin(ScrollTrigger);
 const timeline = [
   { year: "2003", title: "University St. Cyril & Methodius", desc: "Earned a BA in Management, laying the foundation for a career in global finance and business strategy." },
   { year: "2005", title: "Entered the Insurance Industry", desc: "Began building expertise in risk assessment and financial analysis within the global insurance market." },
-  { year: "2010", title: "Senior Underwriter at AIG", desc: "Achieved senior-level position at one of the world's largest insurance companies, specializing in trade credit risk across global markets." },
+  { year: "2010", title: "Regional Underwriting Specialist at AIG", desc: "Achieved specialist-level position at one of the world's largest insurance companies, specializing in trade credit risk across global markets." },
   { year: "2018", title: "Trade Credit University — AIG Certified", desc: "Completed advanced certification in trade credit insurance, deepening expertise in business risk evaluation." },
-  { year: "2020", title: "NLP Master Practitioner", desc: "Became a Certified Master Practitioner in Neuro-Linguistic Programming, integrating behavioral science into coaching." },
+  { year: "2020", title: "Certified in MER® & Hypnotherapy", desc: "Earned certification in Mental and Emotional Release® and Hypnotherapy through the Association of Integrative Psychology (AIP), integrating behavioral science into coaching." },
   { year: "2021", title: "John C. Maxwell Certified Coach", desc: "Earned certification as a Coach, Trainer & Speaker through the John Maxwell Team — a globally recognized leadership development program." },
   { year: "2022", title: "Speaker of Influence", desc: "Completed the Speaker of Influence program through the Empowerment Partnership, enhancing ability to communicate complex financial concepts with clarity and impact." },
   { year: "2023", title: "Launched Independent Practice", desc: "Founded LiLLY'S — an independent financial advisory and coaching practice serving entrepreneurs, investors, and business buyers." },
@@ -54,7 +54,7 @@ export default function AboutPage() {
           </h1>
           <div style={{ width: 60, height: 1.5, background: "var(--color-gold)", margin: "0 auto 24px" }} />
           <p style={{ fontSize: "0.95rem", lineHeight: 1.85, color: "rgba(250,246,238,0.6)", maxWidth: 560, margin: "0 auto" }}>
-            From AIG Senior Underwriter to certified executive coach — a career built on understanding risk, uncovering opportunity, and empowering others to make confident decisions.
+            From AIG Regional Underwriting Specialist to certified executive coach — a career built on understanding risk, uncovering opportunity, and empowering others to make confident decisions.
           </p>
         </div>
       </section>
@@ -70,18 +70,18 @@ export default function AboutPage() {
             <h2 className="sec-title sec-title-dark">Where Finance Meets <em>Human Potential.</em></h2>
             <div className="sec-rule sec-rule-gold" />
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              I spent over two decades in global finance — most of them at AIG, where I served as a Senior Underwriter in trade credit insurance. My work spanned markets across Europe, the Middle East, and the Americas, evaluating billions of dollars in business risk.
+              I spent over two decades in global finance — most of them at AIG, where I served as a Regional Underwriting Specialist in trade credit insurance. My work spanned markets across Europe, the Middle East, and the Americas, evaluating billions of dollars in business risk.
             </p>
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              But somewhere along the way, I realized that the most powerful tool in finance isn&apos;t a spreadsheet — it&apos;s the mindset of the person making the decision. That insight led me to pursue certifications in NLP, executive coaching, and leadership development.
+              But somewhere along the way, I realized that the most powerful tool in finance isn&apos;t a spreadsheet — it&apos;s the mindset of the person making the decision. That insight led me to pursue certifications in Mental and Emotional Release®, Hypnotherapy, executive coaching, and leadership development.
             </p>
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 24 }}>
               Today, I bring both worlds together. Whether you&apos;re buying a business, managing a portfolio, or building something from scratch — I help you see the full picture and make decisions you can stand behind.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-              <span className="cred cred-dark">AIG Senior Underwriter</span>
+              <span className="cred cred-dark">AIG Regional Underwriting Specialist</span>
               <span className="cred cred-gold">Maxwell Certified Coach</span>
-              <span className="cred cred-dark">NLP Master Practitioner</span>
+              <span className="cred cred-dark">MER® & Hypnotherapy (AIP)</span>
               <span className="cred cred-gold">Houston, TX</span>
             </div>
           </div>

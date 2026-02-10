@@ -1,7 +1,7 @@
 import ServicePage from "@/components/ServicePage";
 
 export const metadata = {
-  title: "Business Acquisition Financial Analysis — Jasmina Kolekjeska",
+  title: "Business Acquisition Financial Analysis — J&A Business Advisory",
   description: "Comprehensive financial analysis for business buyers and investors. Evaluate financial statements, cash flow, and risk exposure before making acquisition decisions.",
 };
 
@@ -15,10 +15,10 @@ export default function BusinessAcquisition() {
       intro="Make confident decisions before buying a business. I analyze financial statements, cash flow, and risk exposure — giving you a clear view of the strengths, weaknesses, and sustainability of any business opportunity before you commit."
       detailImage="/images/stock/financial-documents.jpg"
       benefits={[
-        { title: "Financial Statement Deep Dive", desc: "Comprehensive review of income statements, balance sheets, and cash flow statements to uncover the real financial health of the target business." },
-        { title: "Cash Flow Analysis", desc: "Detailed assessment of operating, investing, and financing cash flows to determine the business's ability to generate sustainable returns." },
-        { title: "Risk Exposure Mapping", desc: "Identification of key financial, operational, and market risks that could impact the value and viability of the acquisition." },
-        { title: "Ratio & Benchmark Analysis", desc: "Industry-standard financial ratio analysis compared against relevant benchmarks to contextualize performance." },
+        { title: "Detailed Financial Analysis Report", desc: "A clear interpretation of the company's financial statements, cash flow, and performance trends." },
+        { title: "Strengths and Weaknesses Assessment", desc: "Identification of what the business does well, where it is vulnerable, and where risk is concentrated." },
+        { title: "Actionable Decision Guidance", desc: "Practical steps you can take — whether to proceed, renegotiate, restructure, or walk away." },
+        { title: "Business Resilience & Sustainability Review", desc: "An evaluation of how resilient the business is in a changing environment, including trend analysis and what the business needs to remain sustainable in the future." },
       ]}
       process={[
         { step: 1, title: "Document Collection", desc: "I gather financial statements, tax returns, contracts, and other critical documents from the target business." },

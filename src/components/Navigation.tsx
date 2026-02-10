@@ -32,7 +32,7 @@ export default function Navigation() {
         <div className="nav-top">
           <Link href="/" className="nav-logo" style={{ textDecoration: "none" }}>
             <Image src="/images/logo.png" alt="LiLLY'S Logo" width={38} height={38} />
-            <span className="nav-logo-text">Jasmina Kolekjeska</span>
+            <span className="nav-logo-text">J&A Business Advisory & Coaching</span>
           </Link>
           <div className="nav-links">
             <Link href="/about">About</Link>

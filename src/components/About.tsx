@@ -91,7 +91,8 @@ export default function About() {
               decision-making patterns, I craft strategies that are truly tailored to you.
             </p>
             <p>
-              As a Certified Master Practitioner of NLP and a John C. Maxwell Certified
+              Certified in Mental and Emotional Release® and Hypnotherapy through
+              the Association of Integrative Psychology (AIP), and a John C. Maxwell Certified
               Coach, Trainer, and Speaker, I bring a rare combination: the analytical
               precision of two decades in trade credit insurance at AIG and international
               banking, paired with coaching principles that unlock how you think, decide,
@@ -102,8 +103,8 @@ export default function About() {
               global perspective to every engagement.
             </p>
             <div className="creds">
-              <span className="cred cred-dark">AIG Senior Underwriter</span>
-              <span className="cred cred-gold">NLP Master Practitioner</span>
+              <span className="cred cred-dark">AIG Regional Underwriting Specialist</span>
+              <span className="cred cred-gold">MER® & Hypnotherapy (AIP)</span>
               <span className="cred cred-dark">Maxwell Certified Coach</span>
               <span className="cred cred-gold">Speaker of Influence</span>
               <span className="cred cred-dark">BA Management</span>

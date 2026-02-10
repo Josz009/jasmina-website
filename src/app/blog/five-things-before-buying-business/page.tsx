@@ -1,7 +1,7 @@
 import ArticlePage from "@/components/ArticlePage";
 
 export const metadata = {
-  title: "5 Things You Must Know Before Buying a Business — Jasmina Kolekjeska",
+  title: "5 Things You Must Know Before Buying a Business — J&A Business Advisory",
   description: "Before you sign anything, here are the five critical areas most buyers overlook when acquiring a business — and how to protect yourself.",
 };
 

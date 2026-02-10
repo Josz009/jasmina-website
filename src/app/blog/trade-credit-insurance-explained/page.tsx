@@ -1,7 +1,7 @@
 import ArticlePage from "@/components/ArticlePage";
 
 export const metadata = {
-  title: "Trade Credit Insurance: The Safety Net Most Businesses Don't Know About — Jasmina Kolekjeska",
+  title: "Trade Credit Insurance: The Safety Net Most Businesses Don't Know About — J&A Business Advisory",
   description: "After 20 years in trade credit at AIG, here's what every business owner should know about trade credit insurance and how it can protect your receivables.",
 };
 

@@ -2,18 +2,18 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jasmina Kolekjeska — Financial Advisory, Risk Analysis & Executive Coaching | Houston, TX",
-  description: "Jasmina Kolekjeska offers expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance. AIG Senior Underwriter. NLP Master Practitioner. Houston, Texas.",
-  keywords: "financial advisor houston, business acquisition analysis, portfolio risk advisory, entrepreneur coaching, trade credit insurance expert, NLP coaching, executive coach houston",
+  title: "J&A Business Advisory & Coaching — Financial Advisory, Risk Analysis & Executive Coaching | Houston, TX",
+  description: "J&A Business Advisory & Coaching offers expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance. AIG Regional Underwriting Specialist. Certified in MER® & Hypnotherapy (AIP). Houston, Texas.",
+  keywords: "financial advisor houston, business acquisition analysis, portfolio risk advisory, entrepreneur coaching, trade credit insurance expert, executive coach houston, MER hypnotherapy AIP",
   openGraph: {
-    title: "Jasmina Kolekjeska — Financial Advisory & Executive Coaching",
+    title: "J&A Business Advisory & Coaching — Financial Advisory & Executive Coaching",
     description: "Expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance.",
     type: "website",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jasmina Kolekjeska — Financial Advisory & Executive Coaching",
+    title: "J&A Business Advisory & Coaching — Financial Advisory & Executive Coaching",
     description: "Expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching.",
   },
 };
@@ -36,7 +36,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
-              name: "Jasmina Kolekjeska Financial Advisory",
+              name: "J&A Business Advisory & Coaching",
               description: "Financial advisory, risk analysis, and executive coaching services",
               address: {
                 "@type": "PostalAddress",

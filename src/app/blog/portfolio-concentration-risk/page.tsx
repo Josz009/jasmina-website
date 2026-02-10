@@ -1,7 +1,7 @@
 import ArticlePage from "@/components/ArticlePage";
 
 export const metadata = {
-  title: "Understanding Portfolio Concentration Risk — Jasmina Kolekjeska",
+  title: "Understanding Portfolio Concentration Risk — J&A Business Advisory",
   description: "Most investors think they're diversified. But concentration risk goes deeper than owning different stocks. Learn how to identify hidden correlations.",
 };
 

@@ -7,7 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const credentials = [
-  { name: "AIG", desc: "Senior Underwriter", icon: (
+  { name: "AIG", desc: "Regional Underwriting Specialist", icon: (
     <svg viewBox="0 0 40 40" fill="none" stroke="var(--color-gold)" strokeWidth="1">
       <rect x="4" y="8" width="32" height="24" rx="2" />
       <path d="M12 20h16M20 14v12" strokeWidth="1.5" />
@@ -19,7 +19,7 @@ const credentials = [
       <path d="M8 34c0-7 5.4-12 12-12s12 5 12 12" />
     </svg>
   )},
-  { name: "NLP Master", desc: "Certified Master Practitioner", icon: (
+  { name: "MER® & Hypnotherapy", desc: "Certified — AIP", icon: (
     <svg viewBox="0 0 40 40" fill="none" stroke="var(--color-gold)" strokeWidth="1">
       <path d="M20 4l4 8h8l-6 5 2 9-8-5-8 5 2-9-6-5h8z" />
     </svg>

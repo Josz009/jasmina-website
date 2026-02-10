@@ -128,8 +128,8 @@ export default function Contact() {
           ) : (
             <form className="cf" onSubmit={handleSubmit}>
               <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
-              <input type="hidden" name="subject" value="New Inquiry — Jasmina Kolekjeska Website" />
-              <input type="hidden" name="from_name" value="Jasmina Website Contact Form" />
+              <input type="hidden" name="subject" value="New Inquiry — J&A Business Advisory Website" />
+              <input type="hidden" name="from_name" value="J&A Advisory Website Contact Form" />
               <label>Name</label>
               <input type="text" placeholder="First and last name" required name="name" />
 

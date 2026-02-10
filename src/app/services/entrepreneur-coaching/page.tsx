@@ -1,7 +1,7 @@
 import ServicePage from "@/components/ServicePage";
 
 export const metadata = {
-  title: "Entrepreneur Coaching — Jasmina Kolekjeska",
+  title: "Entrepreneur Coaching — J&A Business Advisory",
   description: "Executive coaching for entrepreneurs and business owners. Develop your decision-making framework, leadership approach, and business strategy with clarity.",
 };
 

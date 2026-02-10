@@ -1,7 +1,7 @@
 import ArticlePage from "@/components/ArticlePage";
 
 export const metadata = {
-  title: "How NLP Can Transform Your Business Decision-Making — Jasmina Kolekjeska",
+  title: "How NLP Can Transform Your Business Decision-Making — J&A Business Advisory",
   description: "Neuro-Linguistic Programming isn't just therapy — it's a powerful framework for understanding how you process information and make high-stakes business decisions.",
 };
 
