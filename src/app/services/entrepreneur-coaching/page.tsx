@@ -10,9 +10,9 @@ export default function EntrepreneurCoaching() {
     <ServicePage
       title="Entrepreneur"
       titleAccent="Coaching"
-      subtitle="for entrepreneurs & business owners"
+      subtitle="build with clarity & intention"
       heroImage="/images/stock/coaching-session.jpg"
-      intro="Everything starts with you. Together, we explore your patterns, your strengths, and how you make decisions, so you can lead your business with more clarity, confidence, and ease."
+      intro="I work with entrepreneurs and individuals to understand their decision-making style, risk tolerance, and leadership approach so they can build and grow their business more effectively. Everything starts from the individual — identifying patterns and processes. Everything we do in our lives has a certain strategy; the goal is to optimize your decision-making and maximize your strengths while moderating the risk."
       detailImage="/images/lifestyle.jpg"
       benefits={[
         { title: "Pattern Identification", desc: "Uncover the patterns in how you think, decide, and lead — so you can keep what works and change what doesn't." },
