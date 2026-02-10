@@ -69,15 +69,16 @@ export default function Hero() {
           <Image src="/images/logo.png" alt="LiLLY'S Logo" width={64} height={64} />
         </div>
         <h1>
-          Exceptional Clarity for <em>Exceptional Decisions.</em>
+          Exceptional Clarity for <em>Complex Financial Decisions.</em>
         </h1>
         <div className="hero-rule" />
         <p className="hero-sub">
-          Experience personalized financial analysis, risk advisory, and executive
-          coaching — designed to simplify complexity and empower your most important
-          decisions.
+          With over 20 years of underwriting experience, I provide personalized
+          financial analysis, risk advisory, and executive coaching to help you
+          understand risk, optimize opportunity, and move forward with confidence
+          — supported by thoughtful, high-touch guidance.
         </p>
-        <p className="hero-tagline">Sophisticated insight, high-touch service.</p>
+        <p className="hero-tagline">Clarity. Confidence. Results.</p>
         <a href="#contact" className="hero-btn">
           Schedule a Consultation
         </a>
