@@ -49,11 +49,11 @@ export default function AboutPage() {
         <div className="about-hero-content" style={{ position: "relative", zIndex: 2, maxWidth: 700, padding: "120px 32px 80px" }}>
           <span className="sec-tag sec-tag-gold" style={{ marginBottom: 16 }}>about jasmina</span>
           <h1 style={{ fontFamily: "var(--font-display)", fontSize: "3.2rem", fontWeight: 400, color: "#fff", lineHeight: 1.15, marginBottom: 20 }}>
-            20+ Years of Global <em style={{ fontStyle: "italic", color: "var(--color-gold)" }}>Financial Expertise.</em>
+            Global <em style={{ fontStyle: "italic", color: "var(--color-gold)" }}>Financial Expertise.</em>
           </h1>
           <div style={{ width: 60, height: 1.5, background: "var(--color-gold)", margin: "0 auto 24px" }} />
           <p style={{ fontSize: "0.95rem", lineHeight: 1.85, color: "rgba(250,246,238,0.6)", maxWidth: 560, margin: "0 auto" }}>
-            From AIG Regional Underwriting Specialist to certified executive coach — a career built on understanding risk, uncovering opportunity, and empowering others to make confident decisions.
+            Helping business owners and entrepreneurs make confident financial decisions — backed by decades of real-world experience in risk, strategy, and human potential.
           </p>
         </div>
       </section>
@@ -90,9 +90,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-              <span className="cred cred-dark">AIG Regional Underwriting Specialist</span>
               <span className="cred cred-gold">Maxwell Certified Coach</span>
-              <span className="cred cred-dark">MER® & Hypnotherapy (AIP)</span>
             </div>
           </div>
         </div>
