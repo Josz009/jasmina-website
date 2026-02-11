@@ -50,6 +50,8 @@ export default function Hero() {
         </div>
       </div>
       <div className="hero-overlay" style={{ background: "linear-gradient(180deg, rgba(26,16,40,0.3) 0%, rgba(36,24,56,0.15) 50%, rgba(26,16,40,0.4) 100%)" }} />
+      {/* Soft radial vignette behind text area */}
+      <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "radial-gradient(ellipse 60% 50% at 50% 45%, rgba(26,16,40,0.5) 0%, transparent 100%)", pointerEvents: "none" }} />
 
       {/* Decorative geometric overlay */}
       <div className="hero-geometric">
@@ -70,16 +72,16 @@ export default function Hero() {
         <div className="hero-icon">
           <Image src="/images/logo.png" alt="LiLLY'S Logo" width={64} height={64} />
         </div>
-        <h1>
+        <h1 style={{ textShadow: "0 2px 24px rgba(0,0,0,0.4)" }}>
           Exceptional Clarity for <em>Complex Financial Decisions.</em>
         </h1>
         <div className="hero-rule" />
-        <p className="hero-sub">
+        <p className="hero-sub" style={{ color: "rgba(250,246,238,0.82)", textShadow: "0 1px 16px rgba(0,0,0,0.3)" }}>
           Personalized financial analysis, risk advisory, and executive
           coaching to help you understand risk, optimize opportunity, and move
           forward with confidence — supported by thoughtful, high-touch guidance.
         </p>
-        <p className="hero-tagline">Clarity. Confidence. Results.</p>
+        <p className="hero-tagline" style={{ textShadow: "0 1px 12px rgba(0,0,0,0.3)" }}>Clarity. Confidence. Results.</p>
         <a href="#contact" className="hero-btn">
           Schedule a Consultation
         </a>
