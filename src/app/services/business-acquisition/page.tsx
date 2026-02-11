@@ -10,7 +10,7 @@ export default function BusinessAcquisition() {
     <ServicePage
       title="Business Acquisition"
       titleAccent="Financial Analysis"
-      subtitle="for buyers & investors"
+      subtitle="for business buyers & investors"
       heroImage="/images/stock/business-deal.jpg"
       intro="Make confident decisions before buying a business. I analyze financial statements, cash flow, and risk exposure — giving you a clear view of the strengths, weaknesses, and sustainability of any business opportunity before you commit."
       detailImage="/images/stock/financial-documents.jpg"
@@ -24,7 +24,7 @@ export default function BusinessAcquisition() {
         { step: 1, title: "Document Collection", desc: "I gather financial statements, tax returns, contracts, and other critical documents from the target business." },
         { step: 2, title: "Deep Financial Analysis", desc: "Rigorous analysis of all financial data, identifying trends, anomalies, red flags, and opportunities." },
         { step: 3, title: "Risk Assessment Report", desc: "A comprehensive written report detailing findings, risk factors, and a clear summary of the financial picture." },
-        { step: 4, title: "Decision Strategy Session", desc: "A 90-minute one-on-one session to walk through all findings and help you make an informed decision." },
+        { step: 4, title: "Decision Strategy Session", desc: "A one-on-one session to walk through all findings and help you make an informed decision." },
       ]}
       quote="The difference between a good deal and a costly mistake often lies in the quality of the financial analysis behind the decision."
     />

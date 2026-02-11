@@ -10,7 +10,7 @@ export default function EntrepreneurCoaching() {
     <ServicePage
       title="Entrepreneur"
       titleAccent="Coaching"
-      subtitle="build with clarity & intention"
+      subtitle="for entrepreneurs, individuals & business owners"
       heroImage="/images/stock/coaching-session.jpg"
       intro="I work with entrepreneurs and individuals to understand their decision-making style, risk tolerance, and leadership approach so they can build and grow their business more effectively. Everything starts from the individual — identifying patterns and processes. Everything we do in our lives has a certain strategy; the goal is to optimize your decision-making and maximize your strengths while moderating the risk."
       detailImage="/images/lifestyle.jpg"

@@ -8,7 +8,7 @@ export const metadata = {
 export default function PortfolioAdvisory() {
   return (
     <ServicePage
-      title="Portfolio & Trading"
+      title="AR Portfolio & Trading"
       titleAccent="Risk Advisory"
       subtitle="for active traders & investors"
       heroImage="/images/stock/financial-charts.jpg"
