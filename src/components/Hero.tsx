@@ -37,17 +37,19 @@ export default function Hero() {
 
   return (
     <section className="hero" ref={sectionRef}>
-      <div className="hero-bg" ref={bgRef}>
-        <Image
-          src="/images/logo.png"
-          alt="J&A Business Advisory & Coaching"
-          fill
-          priority
-          style={{ objectFit: "cover", objectPosition: "center center" }}
-          sizes="100vw"
-        />
+      <div className="hero-bg" ref={bgRef} style={{ background: "linear-gradient(160deg, #1a1028 0%, #241838 40%, #1a1028 100%)" }}>
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: 0.07 }}>
+          <Image
+            src="/images/logo.png"
+            alt=""
+            width={500}
+            height={500}
+            priority
+            style={{ width: "45vh", height: "45vh", objectFit: "contain" }}
+          />
+        </div>
       </div>
-      <div className="hero-overlay" />
+      <div className="hero-overlay" style={{ background: "linear-gradient(180deg, rgba(26,16,40,0.3) 0%, rgba(36,24,56,0.15) 50%, rgba(26,16,40,0.4) 100%)" }} />
 
       {/* Decorative geometric overlay */}
       <div className="hero-geometric">
