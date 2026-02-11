@@ -17,7 +17,6 @@ const timeline = [
   { year: "2018", title: "Trade Credit University — AIG Certified", desc: "Completed advanced certification in trade credit insurance, deepening expertise in business risk evaluation." },
   { year: "2020", title: "Certified in MER® & Hypnotherapy", desc: "Earned certification in Mental and Emotional Release® and Hypnotherapy through the Association of Integrative Psychology (AIP), integrating behavioral science into coaching." },
   { year: "2021", title: "John C. Maxwell Certified Coach", desc: "Earned certification as a Coach, Trainer & Speaker through the John Maxwell Team — a globally recognized leadership development program." },
-  { year: "2022", title: "Speaker of Influence", desc: "Completed the Speaker of Influence program through the Empowerment Partnership, enhancing ability to communicate complex financial concepts with clarity and impact." },
   { year: "2023", title: "Launched Independent Practice", desc: "Founded LiLLY'S — an independent financial advisory and coaching practice serving entrepreneurs, investors, and business buyers." },
 ];
 
@@ -94,7 +93,6 @@ export default function AboutPage() {
               <span className="cred cred-dark">AIG Regional Underwriting Specialist</span>
               <span className="cred cred-gold">Maxwell Certified Coach</span>
               <span className="cred cred-dark">MER® & Hypnotherapy (AIP)</span>
-              <span className="cred cred-gold">Houston, TX</span>
             </div>
           </div>
         </div>

@@ -10,18 +10,13 @@ gsap.registerPlugin(ScrollTrigger);
 const regions = [
   { name: "Europe", desc: "Banking and financial services across Macedonia, Serbia, and the broader Balkans region." },
   { name: "Middle East", desc: "International trade credit and risk assessment across diverse markets and economies." },
-  { name: "Americas", desc: "Senior underwriting at AIG Houston, managing the South-Central Zone trade credit portfolio." },
+  { name: "Americas", desc: "Regional underwriting specialist at AIG, managing trade credit portfolios across the South-Central Zone." },
 ];
 
 const languages = [
   { name: "Macedonian", native: true },
   { name: "English", native: true },
   { name: "Serbian", native: true },
-  { name: "Bosnian", native: true },
-  { name: "Croatian", native: true },
-  { name: "Bulgarian", native: false },
-  { name: "Slovenian", native: false },
-  { name: "French", native: false },
 ];
 
 export default function GlobalExperience() {

@@ -20,7 +20,7 @@ const packages = [
   },
   {
     title: "Portfolio Review",
-    featured: true,
+    featured: false,
     items: [
       "Portfolio risk assessment",
       "Exposure & weighting analysis",
@@ -36,6 +36,7 @@ const packages = [
       "Decision-making framework",
       "Business strategy clarity",
       "Monthly accountability sessions",
+      "Complimentary portfolio review or financial analysis",
     ],
   },
 ];

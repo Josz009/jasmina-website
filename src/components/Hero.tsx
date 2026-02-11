@@ -73,10 +73,9 @@ export default function Hero() {
         </h1>
         <div className="hero-rule" />
         <p className="hero-sub">
-          With over 20 years of underwriting experience, I provide personalized
-          financial analysis, risk advisory, and executive coaching to help you
-          understand risk, optimize opportunity, and move forward with confidence
-          — supported by thoughtful, high-touch guidance.
+          Personalized financial analysis, risk advisory, and executive
+          coaching to help you understand risk, optimize opportunity, and move
+          forward with confidence — supported by thoughtful, high-touch guidance.
         </p>
         <p className="hero-tagline">Clarity. Confidence. Results.</p>
         <a href="#contact" className="hero-btn">

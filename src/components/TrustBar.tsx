@@ -24,12 +24,6 @@ const credentials = [
       <path d="M20 4l4 8h8l-6 5 2 9-8-5-8 5 2-9-6-5h8z" />
     </svg>
   )},
-  { name: "Speaker of Influence", desc: "Empowerment Partnership", icon: (
-    <svg viewBox="0 0 40 40" fill="none" stroke="var(--color-gold)" strokeWidth="1">
-      <path d="M10 30V16l10-8 10 8v14" />
-      <rect x="16" y="22" width="8" height="8" />
-    </svg>
-  )},
   { name: "Trade Credit University", desc: "AIG Certified", icon: (
     <svg viewBox="0 0 40 40" fill="none" stroke="var(--color-gold)" strokeWidth="1">
       <path d="M6 16l14-8 14 8-14 8z" />

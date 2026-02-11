@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "J&A Business Advisory & Coaching — Financial Advisory, Risk Analysis & Executive Coaching | Houston, TX",
-  description: "J&A Business Advisory & Coaching offers expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance. AIG Regional Underwriting Specialist. Certified in MER® & Hypnotherapy (AIP). Houston, Texas.",
-  keywords: "financial advisor houston, business acquisition analysis, portfolio risk advisory, entrepreneur coaching, trade credit insurance expert, executive coach houston, MER hypnotherapy AIP",
+  title: "J&A Business Advisory & Coaching — Financial Advisory, Risk Analysis & Executive Coaching",
+  description: "J&A Business Advisory & Coaching offers expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance. AIG Regional Underwriting Specialist. Certified in MER® & Hypnotherapy (AIP).",
+  keywords: "business acquisition analysis, portfolio risk advisory, entrepreneur coaching, trade credit insurance expert, financial advisor, MER hypnotherapy AIP",
   openGraph: {
     title: "J&A Business Advisory & Coaching — Financial Advisory & Executive Coaching",
     description: "Expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance.",
@@ -38,13 +38,6 @@ export default function RootLayout({
               "@type": "ProfessionalService",
               name: "J&A Business Advisory & Coaching",
               description: "Financial advisory, risk analysis, and executive coaching services",
-              address: {
-                "@type": "PostalAddress",
-                addressLocality: "Houston",
-                addressRegion: "TX",
-                addressCountry: "US",
-              },
-              telephone: "+13462573921",
               email: "jasminavigil79@gmail.com",
               founder: {
                 "@type": "Person",

@@ -99,16 +99,15 @@ export default function About() {
               and lead.
             </p>
             <p>
-              Fluent in five languages, experienced across three continents — I bring a
+              Fluent in three languages, experienced across three continents — I bring a
               global perspective to every engagement.
             </p>
             <div className="creds">
               <span className="cred cred-dark">AIG Regional Underwriting Specialist</span>
               <span className="cred cred-gold">MER® & Hypnotherapy (AIP)</span>
               <span className="cred cred-dark">Maxwell Certified Coach</span>
-              <span className="cred cred-gold">Speaker of Influence</span>
               <span className="cred cred-dark">BA Management</span>
-              <span className="cred cred-gold">5+ Languages</span>
+              <span className="cred cred-gold">3 Languages</span>
             </div>
           </div>
         </div>
