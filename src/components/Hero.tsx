@@ -39,8 +39,8 @@ export default function Hero() {
     <section className="hero" ref={sectionRef}>
       <div className="hero-bg" ref={bgRef}>
         <Image
-          src="/images/stock/luxury-office.jpg"
-          alt="Luxury office"
+          src="/images/logo.png"
+          alt="J&A Business Advisory & Coaching"
           fill
           priority
           style={{ objectFit: "cover", objectPosition: "center center" }}

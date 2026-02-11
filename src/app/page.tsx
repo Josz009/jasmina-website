@@ -31,8 +31,8 @@ export default function Home() {
       <DecorativeDivider variant="squares" />
       <Process />
       <Packages />
-      <Results />
-      <Testimonials />
+      {/* <Results /> */}
+      {/* <Testimonials /> */}
       <DecorativeDivider variant="squares" />
       <GlobalExperience />
       <Contact />
