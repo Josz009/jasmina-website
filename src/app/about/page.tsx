@@ -70,13 +70,22 @@ export default function AboutPage() {
             <h2 className="sec-title sec-title-dark">Where Finance Meets <em>Human Potential.</em></h2>
             <div className="sec-rule sec-rule-gold" />
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              I spent over two decades in global finance — most of them at AIG, where I served as a Regional Underwriting Specialist in trade credit insurance. My work spanned markets across Europe, the Middle East, and the Americas, evaluating billions of dollars in business risk.
+              I&apos;ve spent more than two decades in finance, building a career in risk analysis and trade credit insurance. I started as an underwriter and grew into roles where I helped structure insurance solutions that protected billions of dollars in business transactions across Europe, the Middle East, Asia and the Americas.
             </p>
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              But somewhere along the way, I realized that the most powerful tool in finance isn&apos;t a spreadsheet — it&apos;s the mindset of the person making the decision. That insight led me to pursue certifications in Mental and Emotional Release®, Hypnotherapy, executive coaching, and leadership development.
+              Over time, I realized something unexpected: numbers tell the story of the past — but people and their decisions determine the future. The most powerful tool in finance isn&apos;t a spreadsheet, a balance sheet, or a financial model — it&apos;s the mindset of the person making the decision.
             </p>
-            <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 24 }}>
-              Today, I bring both worlds together. Whether you&apos;re buying a business, managing a portfolio, or building something from scratch — I help you see the full picture and make decisions you can stand behind.
+            <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
+              That realization changed the direction of my work. I began investing in new training, certifications, and coaching tools so I could better understand how people think about risk, growth, and decision-making. I wanted to help individuals not just protect their businesses, but maximize their potential.
+            </p>
+            <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
+              Today, I bring these two worlds together — financial risk expertise and human development.
+            </p>
+            <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
+              Whether you&apos;re buying a business, managing accounts receivable, feeling overwhelmed by financial decisions, or building something from scratch, I help you see the full picture and make decisions you can stand behind.
+            </p>
+            <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", fontStyle: "italic", marginBottom: 24 }}>
+              Moving from stress to confidence. From unease to clarity.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
               <span className="cred cred-dark">AIG Regional Underwriting Specialist</span>
