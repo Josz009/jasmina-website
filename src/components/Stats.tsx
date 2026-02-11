@@ -8,7 +8,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const stats = [
   { number: 20, suffix: "+", label: "Years in Finance" },
-  { number: 5, suffix: "+", label: "Languages Fluent" },
+  { number: 3, suffix: "", label: "Languages Fluent" },
   { number: 3, suffix: "", label: "Continents" },
   { number: 25, suffix: "M+", label: "Underwriting Authority" },
 ];

@@ -64,7 +64,7 @@ export default function GlobalExperience() {
         <div className="global-top">
           <span className="sec-tag sec-tag-gold">global perspective</span>
           <h2 className="sec-title sec-title-light">
-            Three Continents. Five Languages. <em>One Mission.</em>
+            Three Continents. Three Languages. <em>One Mission.</em>
           </h2>
           <div className="sec-rule sec-rule-gold" />
           <p className="sec-desc sec-desc-light">
