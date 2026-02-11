@@ -38,14 +38,14 @@ export default function Hero() {
   return (
     <section className="hero" ref={sectionRef}>
       <div className="hero-bg" ref={bgRef} style={{ background: "linear-gradient(160deg, #1a1028 0%, #241838 40%, #1a1028 100%)" }}>
-        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: 0.07 }}>
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: 0.15 }}>
           <Image
             src="/images/logo.png"
             alt=""
-            width={500}
-            height={500}
+            width={700}
+            height={700}
             priority
-            style={{ width: "45vh", height: "45vh", objectFit: "contain" }}
+            style={{ width: "70vh", height: "70vh", objectFit: "contain" }}
           />
         </div>
       </div>
