@@ -84,9 +84,12 @@ export default function AboutPage() {
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
               Whether you&apos;re buying a business, managing accounts receivable, feeling overwhelmed by financial decisions, or building something from scratch, I help you see the full picture and make decisions you can stand behind.
             </p>
-            <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", fontStyle: "italic", marginBottom: 24 }}>
-              Moving from stress to confidence. From unease to clarity.
-            </p>
+            <div style={{ marginTop: 12, marginBottom: 24 }}>
+              <div style={{ width: 40, height: 1.5, background: "var(--color-gold)", marginBottom: 16 }} />
+              <p style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", fontWeight: 400, fontStyle: "italic", color: "var(--color-gold)", lineHeight: 1.5, letterSpacing: "0.3px" }}>
+                Moving from stress to confidence.<br />From unease to clarity.
+              </p>
+            </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
               <span className="cred cred-dark">AIG Regional Underwriting Specialist</span>
               <span className="cred cred-gold">Maxwell Certified Coach</span>
