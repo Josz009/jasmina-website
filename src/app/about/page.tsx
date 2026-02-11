@@ -44,15 +44,22 @@ export default function AboutPage() {
     <div ref={pageRef}>
       <Navigation />
       <section style={{ position: "relative", minHeight: "60vh", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", overflow: "hidden" }}>
-        <Image src="/images/stock/woman-leader.jpg" alt="Jasmina Kolekjeska" fill priority style={{ objectFit: "cover" }} sizes="100vw" />
-        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(26,16,40,0.88) 0%, rgba(36,24,56,0.8) 50%, rgba(26,16,40,0.92) 100%)" }} />
+        {/* Deep purple gradient + logo watermark */}
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(160deg, #1a1028 0%, #241838 40%, #1a1028 100%)" }}>
+          <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", opacity: 0.15 }}>
+            <Image src="/images/logo.png" alt="" width={700} height={700} priority style={{ width: "70vh", height: "70vh", objectFit: "contain" }} />
+          </div>
+        </div>
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(26,16,40,0.3) 0%, rgba(36,24,56,0.15) 50%, rgba(26,16,40,0.4) 100%)" }} />
+        {/* Soft radial vignette behind text */}
+        <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "radial-gradient(ellipse 60% 50% at 50% 45%, rgba(26,16,40,0.5) 0%, transparent 100%)", pointerEvents: "none" }} />
         <div className="about-hero-content" style={{ position: "relative", zIndex: 2, maxWidth: 700, padding: "120px 32px 80px" }}>
           <span className="sec-tag sec-tag-gold" style={{ marginBottom: 16 }}>about jasmina</span>
-          <h1 style={{ fontFamily: "var(--font-display)", fontSize: "3.2rem", fontWeight: 400, color: "#fff", lineHeight: 1.15, marginBottom: 20 }}>
+          <h1 style={{ fontFamily: "var(--font-display)", fontSize: "3.2rem", fontWeight: 400, color: "#fff", lineHeight: 1.15, marginBottom: 20, textShadow: "0 2px 24px rgba(0,0,0,0.4)" }}>
             Global <em style={{ fontStyle: "italic", color: "var(--color-gold)" }}>Financial Expertise.</em>
           </h1>
           <div style={{ width: 60, height: 1.5, background: "var(--color-gold)", margin: "0 auto 24px" }} />
-          <p style={{ fontSize: "0.95rem", lineHeight: 1.85, color: "rgba(250,246,238,0.6)", maxWidth: 560, margin: "0 auto" }}>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.85, color: "rgba(250,246,238,0.82)", maxWidth: 560, margin: "0 auto", textShadow: "0 1px 16px rgba(0,0,0,0.3)" }}>
             Helping business owners and entrepreneurs make confident financial decisions — backed by decades of real-world experience in risk, strategy, and human potential.
           </p>
         </div>

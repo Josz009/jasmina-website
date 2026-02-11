@@ -111,16 +111,18 @@ export default function FAQPage() {
       <section style={{ position: "relative", minHeight: "55vh", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", overflow: "hidden" }}>
         <Image src="/images/stock/faq-header.jpg" alt="Frequently Asked Questions" fill priority style={{ objectFit: "cover" }} sizes="100vw" />
         <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(26,16,40,0.92) 0%, rgba(36,24,56,0.85) 50%, rgba(26,16,40,0.95) 100%)" }} />
+        {/* Soft radial vignette behind text */}
+        <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "radial-gradient(ellipse 60% 50% at 50% 45%, rgba(26,16,40,0.5) 0%, transparent 100%)", pointerEvents: "none" }} />
         {/* Decorative corner accents */}
         <div style={{ position: "absolute", top: 80, left: 40, width: 60, height: 60, borderTop: "1px solid rgba(201,149,43,0.15)", borderLeft: "1px solid rgba(201,149,43,0.15)" }} />
         <div style={{ position: "absolute", bottom: 40, right: 40, width: 60, height: 60, borderBottom: "1px solid rgba(201,149,43,0.15)", borderRight: "1px solid rgba(201,149,43,0.15)" }} />
         <div className="faq-hero-content" style={{ position: "relative", zIndex: 2, maxWidth: 700, padding: "130px 32px 90px" }}>
           <span className="sec-tag sec-tag-gold" style={{ marginBottom: 16 }}>common questions</span>
-          <h1 style={{ fontFamily: "var(--font-display)", fontSize: "3.4rem", fontWeight: 400, color: "#fff", lineHeight: 1.15, marginBottom: 20 }}>
+          <h1 style={{ fontFamily: "var(--font-display)", fontSize: "3.4rem", fontWeight: 400, color: "#fff", lineHeight: 1.15, marginBottom: 20, textShadow: "0 2px 24px rgba(0,0,0,0.4)" }}>
             Frequently Asked <em style={{ fontStyle: "italic", color: "var(--color-gold)" }}>Questions.</em>
           </h1>
           <div className="faq-hero-ornament" style={{ width: 80, height: 1.5, background: "linear-gradient(90deg, transparent, var(--color-gold), transparent)", margin: "0 auto 24px", transformOrigin: "center" }} />
-          <p style={{ fontSize: "0.95rem", lineHeight: 1.85, color: "rgba(250,246,238,0.6)", maxWidth: 560, margin: "0 auto" }}>
+          <p style={{ fontSize: "0.95rem", lineHeight: 1.85, color: "rgba(250,246,238,0.82)", maxWidth: 560, margin: "0 auto", textShadow: "0 1px 16px rgba(0,0,0,0.3)" }}>
             Everything you need to know about working together. If you don&apos;t see your question here, don&apos;t hesitate to reach out.
           </p>
         </div>
