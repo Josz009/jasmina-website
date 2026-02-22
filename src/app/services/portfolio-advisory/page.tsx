@@ -21,10 +21,10 @@ export default function PortfolioAdvisory() {
         { title: "Portfolio Optimization & Diversification", desc: "Actionable guidance on how to optimize and diversify risk across your portfolio, reducing concentration and trading with greater confidence and discipline." },
       ]}
       process={[
-        { step: 1, title: "Portfolio Review", desc: "I collect and review your current holdings, trading history, and investment strategy documentation." },
-        { step: 2, title: "Risk Modeling", desc: "Advanced analysis of portfolio risk metrics, correlations, and stress scenarios tailored to your positions." },
-        { step: 3, title: "Optimization Report", desc: "A detailed report with exposure analysis, risk ratings, and specific optimization recommendations." },
-        { step: 4, title: "Strategy Discussion", desc: "An in-depth session to review findings and align on a disciplined, data-driven trading strategy." },
+        { step: 1, title: "A/R Portfolio Review & Data Collection", desc: "Collect accounts receivable aging reports, trading history, customer exposure data, and credit management practices. This creates a complete view of how risk is distributed across your portfolio." },
+        { step: 2, title: "Portfolio Risk Analysis", desc: "Conduct a structured analysis of customer concentration, sector exposure, geographic risk, and receivables quality. This includes portfolio segmentation, correlation assessment, and risk-matrix evaluation to identify vulnerabilities and hidden exposures." },
+        { step: 3, title: "Risk & Optimization Report", desc: "Receive a comprehensive report outlining portfolio exposure, concentration risks, receivables quality, and specific optimization recommendations to strengthen resilience and financial stability." },
+        { step: 4, title: "Strategy & Portfolio Quality Session", desc: "A one-on-one advisory session to review findings and align on disciplined credit management, trading strategy, and portfolio quality improvement. This step connects receivables performance directly to balance-sheet strength and long-term financial health." },
       ]}
       quote="Confidence in trading doesn't come from predictions — it comes from deeply understanding your own risk exposure."
     />
