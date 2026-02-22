@@ -59,12 +59,12 @@ export default function Philosophy() {
           More Than <em>Numbers.</em>
         </h2>
         <p>
-          I believe the best financial decisions come from understanding both the data
-          and the person behind it. My approach blends analytical depth with coaching
-          principles — because clarity isn&apos;t just about spreadsheets.
-        </p>
-        <p>
-          It&apos;s about knowing yourself well enough to act decisively when it matters most.
+          Business success begins with you. Every leader carries unique strengths that,
+          when intentionally cultivated, drive conscious decisions, aligned growth, and
+          meaningful impact. I combine analytical precision with human-first insight to
+          help you optimize strengths, navigate risk, and build strategies that serve
+          both business and community — creating results that are intentional, sustainable,
+          and values-driven.
         </p>
         <div className="phil-quote">
           <p>
