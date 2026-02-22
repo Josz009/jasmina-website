@@ -11,13 +11,17 @@ import Footer from "@/components/Footer";
 gsap.registerPlugin(ScrollTrigger);
 
 const timeline = [
-  { year: "2003", title: "University St. Cyril & Methodius", desc: "Earned a BA in Management, laying the foundation for a career in global finance and business strategy." },
-  { year: "2005", title: "Entered the Insurance Industry", desc: "Began building expertise in risk assessment and financial analysis within the global insurance market." },
-  { year: "2010", title: "Regional Underwriting Specialist at AIG", desc: "Achieved specialist-level position at one of the world's largest insurance companies, specializing in trade credit risk across global markets." },
-  { year: "2018", title: "Trade Credit University — AIG Certified", desc: "Completed advanced certification in trade credit insurance, deepening expertise in business risk evaluation." },
-  { year: "2020", title: "Certified in MER® & Hypnotherapy", desc: "Earned certification in Mental and Emotional Release® and Hypnotherapy through the Association of Integrative Psychology (AIP), integrating behavioral science into coaching." },
-  { year: "2021", title: "John C. Maxwell Certified Coach", desc: "Earned certification as a Coach, Trainer & Speaker through the John Maxwell Team — a globally recognized leadership development program." },
-  { year: "2023", title: "Launched Independent Practice", desc: "Founded LiLLY'S — an independent financial advisory and coaching practice serving entrepreneurs, investors, and business buyers." },
+  { year: "2002", title: "Bachelor's Degree in Management", desc: "Foundation in business strategy, entrepreneurship, finance, and organizational leadership." },
+  { year: "2002", title: "High School Teacher — Management & Business", desc: "Developed future professionals while strengthening communication, structure, and leadership capabilities." },
+  { year: "2003", title: "Underwriter & Senior Underwriter — Development Bank of N. Macedonia", desc: "Introduced and adapted European trade credit insurance models to Macedonian legislation and market conditions, contributing to financial infrastructure development." },
+  { year: "2017", title: "Underwriting Specialist — AIG", desc: "Managed complex global risk portfolios and structured insurance solutions protecting international transactions." },
+  { year: "2019", title: "Certified Coach — Maxwell Leadership", desc: "Earned certification as a Coach, Trainer & Speaker through the Maxwell Leadership program — a globally recognized leadership development organization." },
+  { year: "2020", title: "NLP Practitioner Certification — AIP", desc: "Certified through the Association for Integrative Psychology, building expertise in neuro-linguistic programming and behavioral change." },
+  { year: "2021", title: "Master NLP Practitioner — AIP", desc: "Advanced NLP certification through the Association for Integrative Psychology, deepening expertise in decision psychology and human performance." },
+  { year: "2021", title: "HeartMath Coherence Certification", desc: "Training in heart-brain synchronization and psychophysiological coherence — regulating the nervous system, increasing emotional self-regulation, and aligning heart rhythms, breath, and brain activity." },
+  { year: "2022", title: "Mental & Emotional Release® & Hypnotherapy — AIP", desc: "Certified in MER® and Hypnotherapy through the Association of Integrative Psychology, integrating behavioral science into coaching practice." },
+  { year: "2026", title: "Gene Keys Guide Certification", desc: "Deep shadow work rooted in contemplation that creates space for clear vision and true productivity." },
+  { year: "2026", title: "J&A Business Advisory & Coaching", desc: "Established a boutique advisory and coaching practice integrating financial risk expertise, decision psychology, and conscious leadership to support individuals, entrepreneurs, and business leaders." },
 ];
 
 const values = [
