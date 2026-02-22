@@ -21,10 +21,10 @@ export default function BusinessAcquisition() {
         { title: "Business Resilience & Sustainability Review", desc: "An evaluation of how resilient the business is in a changing environment, including trend analysis and what the business needs to remain sustainable in the future." },
       ]}
       process={[
-        { step: 1, title: "Document Collection", desc: "I gather financial statements, tax returns, contracts, and other critical documents from the target business." },
-        { step: 2, title: "Deep Financial Analysis", desc: "Rigorous analysis of all financial data, identifying trends, anomalies, red flags, and opportunities." },
-        { step: 3, title: "Risk Assessment Report", desc: "A comprehensive written report detailing findings, risk factors, and a clear summary of the financial picture." },
-        { step: 4, title: "Decision Strategy Session", desc: "A one-on-one session to walk through all findings and help you make an informed decision." },
+        { step: 1, title: "Discovery & Document Collection", desc: "Collect essential financial and operational documents, including financial statements, tax returns, contracts, receivables reports, and supporting records. This creates the factual foundation for objective analysis." },
+        { step: 2, title: "Financial Deep-Dive Analysis", desc: "Analyze financial performance, cash flow patterns, liabilities, receivables quality, and operational indicators. Identify trends, inconsistencies, risks, and opportunities that may not be immediately visible." },
+        { step: 3, title: "Risk & Financial Clarity Report", desc: "Receive a comprehensive written report outlining key findings, financial risks, and overall business health — presented in a clear and decision-ready format." },
+        { step: 4, title: "Decision Strategy Session", desc: "A one-on-one advisory session to review the analysis, clarify implications, and support confident decision-making. We define next steps aligned with your financial, strategic, and personal goals." },
       ]}
       quote="The difference between a good deal and a costly mistake often lies in the quality of the financial analysis behind the decision."
     />
