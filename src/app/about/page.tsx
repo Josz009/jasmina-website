@@ -76,24 +76,27 @@ export default function AboutPage() {
             <h2 className="sec-title sec-title-dark">Where Finance Meets <em>Human Potential.</em></h2>
             <div className="sec-rule sec-rule-gold" />
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              I&apos;ve spent more than two decades in finance, building a career in risk analysis and trade credit insurance. I started as an underwriter and grew into roles where I helped structure insurance solutions that protected billions of dollars in business transactions across Europe, the Middle East, Asia and the Americas.
+              I&apos;ve spent more than two decades in finance, building a career in risk analysis and trade credit insurance. I began as an underwriter, structuring insurance solutions that protected billions of dollars in global business transactions.
             </p>
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              Over time, I realized something unexpected: numbers tell the story of the past — but people and their decisions determine the future. The most powerful tool in finance isn&apos;t a spreadsheet, a balance sheet, or a financial model — it&apos;s the mindset of the person making the decision.
+              Over time, I realized something deeper. Numbers tell a story — but they only tell the story of what has already happened. The future is not shaped by spreadsheets, balance sheets, or financial models. It is shaped by the people interpreting them and the decisions they choose to make.
             </p>
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              That realization changed the direction of my work. I began investing in new training, certifications, and coaching tools so I could better understand how people think about risk, growth, and decision-making. I wanted to help individuals not just protect their businesses, but maximize their potential.
+              The most powerful force in finance is not data — it&apos;s mindset.
             </p>
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              Today, I bring these two worlds together — financial risk expertise and human development.
+              That realization shifted the direction of my work. I invested in advanced trainings, certifications, and coaching to better understand how people think about risk, growth, leadership, and decision-making. I wanted to move beyond protecting businesses — and begin supporting the individuals behind them.
             </p>
             <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
-              Whether you&apos;re buying a business, managing accounts receivable, feeling overwhelmed by financial decisions, or building something from scratch, I help you see the full picture and make decisions you can stand behind.
+              Today, I integrate two worlds: financial risk expertise and human development.
+            </p>
+            <p style={{ fontSize: "0.92rem", lineHeight: 1.9, color: "var(--color-body)", marginBottom: 16 }}>
+              Whether you are acquiring a business, managing receivables, navigating complex financial decisions, or building something from the ground up, I help you see the full picture. Together, we align financial clarity with personal values — so your decisions are not only strategic, but grounded and sustainable.
             </p>
             <div style={{ marginTop: 12, marginBottom: 24 }}>
               <div style={{ width: 40, height: 1.5, background: "var(--color-gold)", marginBottom: 16 }} />
               <p style={{ fontFamily: "var(--font-display)", fontSize: "1.4rem", fontWeight: 400, fontStyle: "italic", color: "var(--color-gold)", lineHeight: 1.5, letterSpacing: "0.3px" }}>
-                Moving from stress to confidence.<br />From unease to clarity.
+                Move from stress to confidence.<br />From unease to clarity.
               </p>
             </div>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
