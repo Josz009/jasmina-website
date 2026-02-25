@@ -11,7 +11,7 @@ export default function BusinessAcquisition() {
       title="Business Acquisition"
       titleAccent="Financial Analysis"
       subtitle="for business buyers & investors"
-      heroImage="/images/stock/business-deal.jpg"
+      heroImage="/images/stock/service-acquisition.jpg"
       intro="Make confident decisions before buying a business. I analyze financial statements, cash flow, and risk exposure — giving you a clear view of the strengths, weaknesses, and sustainability of any business opportunity before you commit."
       detailImage="/images/stock/financial-documents.jpg"
       benefits={[

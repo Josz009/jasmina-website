@@ -7,12 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const credentials = [
-  { name: "AIG", desc: "Regional Underwriting Specialist", icon: (
-    <svg viewBox="0 0 40 40" fill="none" stroke="var(--color-gold)" strokeWidth="1">
-      <rect x="4" y="8" width="32" height="24" rx="2" />
-      <path d="M12 20h16M20 14v12" strokeWidth="1.5" />
-    </svg>
-  )},
   { name: "John C. Maxwell", desc: "Certified Coach, Trainer & Speaker", icon: (
     <svg viewBox="0 0 40 40" fill="none" stroke="var(--color-gold)" strokeWidth="1">
       <circle cx="20" cy="14" r="6" />
@@ -24,7 +18,7 @@ const credentials = [
       <path d="M20 4l4 8h8l-6 5 2 9-8-5-8 5 2-9-6-5h8z" />
     </svg>
   )},
-  { name: "Trade Credit University", desc: "AIG Certified", icon: (
+  { name: "Trade Credit University", desc: "Certified", icon: (
     <svg viewBox="0 0 40 40" fill="none" stroke="var(--color-gold)" strokeWidth="1">
       <path d="M6 16l14-8 14 8-14 8z" />
       <path d="M10 18v10c0 2 4.5 4 10 4s10-2 10-4V18" />
@@ -66,7 +60,7 @@ export default function TrustBar() {
         </span>
         <div className="trust-grid" style={{
           display: "grid",
-          gridTemplateColumns: "repeat(6, 1fr)",
+          gridTemplateColumns: "repeat(4, 1fr)",
           gap: 24,
         }}>
           {credentials.map((cred, i) => (

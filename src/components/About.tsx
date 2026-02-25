@@ -94,7 +94,7 @@ export default function About() {
               Certified in Mental and Emotional Release® and Hypnotherapy through
               the Association of Integrative Psychology (AIP), and a John C. Maxwell Certified
               Coach, Trainer, and Speaker, I bring a rare combination: the analytical
-              precision of two decades in trade credit insurance at AIG and international
+              precision of two decades in trade credit insurance and international
               banking, paired with coaching principles that unlock how you think, decide,
               and lead.
             </p>
@@ -103,7 +103,7 @@ export default function About() {
               global perspective to every engagement.
             </p>
             <div className="creds">
-              <span className="cred cred-dark">AIG Regional Underwriting Specialist</span>
+              <span className="cred cred-dark">Regional Underwriting Specialist</span>
               <span className="cred cred-gold">MER® & Hypnotherapy (AIP)</span>
               <span className="cred cred-dark">Maxwell Certified Coach</span>
               <span className="cred cred-dark">BA Management</span>

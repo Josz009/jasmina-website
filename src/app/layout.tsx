@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "J&A Business Advisory & Coaching — Financial Advisory, Risk Analysis & Executive Coaching",
-  description: "J&A Business Advisory & Coaching offers expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance. AIG Regional Underwriting Specialist. Certified in MER® & Hypnotherapy (AIP).",
+  description: "J&A Business Advisory & Coaching offers expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance. Certified in MER® & Hypnotherapy (AIP).",
   keywords: "business acquisition analysis, portfolio risk advisory, entrepreneur coaching, trade credit insurance expert, financial advisor, MER hypnotherapy AIP",
   openGraph: {
     title: "J&A Business Advisory & Coaching — Financial Advisory & Executive Coaching",

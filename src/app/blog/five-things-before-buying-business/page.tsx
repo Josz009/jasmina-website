@@ -15,7 +15,7 @@ export default function Article() {
       image="/images/stock/business-deal.jpg"
     >
       <p>
-        Buying a business is one of the most significant financial decisions you will ever make. Whether it&apos;s a small local operation or a multi-million dollar enterprise, the stakes are high — and the margin for error is slim. After spending 20+ years analyzing businesses at AIG and helping clients evaluate acquisitions independently, I&apos;ve seen the same mistakes repeat themselves over and over.
+        Buying a business is one of the most significant financial decisions you will ever make. Whether it&apos;s a small local operation or a multi-million dollar enterprise, the stakes are high — and the margin for error is slim. After spending 20+ years analyzing businesses in global finance and helping clients evaluate acquisitions independently, I&apos;ve seen the same mistakes repeat themselves over and over.
       </p>
       <p>
         Here are the five critical areas most buyers overlook — and how to protect yourself before signing on the dotted line.

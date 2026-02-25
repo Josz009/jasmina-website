@@ -2,7 +2,7 @@ import ArticlePage from "@/components/ArticlePage";
 
 export const metadata = {
   title: "Trade Credit Insurance: The Safety Net Most Businesses Don't Know About — J&A Business Advisory",
-  description: "After 20 years in trade credit at AIG, here's what every business owner should know about trade credit insurance and how it can protect your receivables.",
+  description: "After 20 years in trade credit insurance, here's what every business owner should know about trade credit insurance and how it can protect your receivables.",
 };
 
 export default function Article() {
@@ -15,7 +15,7 @@ export default function Article() {
       image="/images/stock/financial-documents.jpg"
     >
       <p>
-        In my 20+ years working in trade credit insurance at AIG, I&apos;ve watched businesses of all sizes face the same devastating scenario: a major customer defaults on payment, and suddenly the company&apos;s cash flow, profitability, and even survival are at risk. The painful irony? There&apos;s an entire category of insurance designed to prevent exactly this — and most business owners have never heard of it.
+        In my 20+ years working in trade credit insurance, I&apos;ve watched businesses of all sizes face the same devastating scenario: a major customer defaults on payment, and suddenly the company&apos;s cash flow, profitability, and even survival are at risk. The painful irony? There&apos;s an entire category of insurance designed to prevent exactly this — and most business owners have never heard of it.
       </p>
       <p>
         Let me change that.
@@ -31,7 +31,7 @@ export default function Article() {
 
       <h2>Why Most Businesses Don&apos;t Know About It</h2>
       <p>
-        Unlike property insurance or liability insurance, trade credit insurance isn&apos;t something most insurance brokers proactively discuss. It&apos;s a specialty product, typically offered by a handful of global insurers — AIG, Euler Hermes (now Allianz Trade), Coface, and Atradius being the major players.
+        Unlike property insurance or liability insurance, trade credit insurance isn&apos;t something most insurance brokers proactively discuss. It&apos;s a specialty product, typically offered by a handful of global insurers — Euler Hermes (now Allianz Trade), Coface, and Atradius being among the major players.
       </p>
       <p>
         Many business owners don&apos;t realize they need it until it&apos;s too late. They think:

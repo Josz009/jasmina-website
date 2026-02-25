@@ -64,7 +64,7 @@ export default function Navigation() {
               </div>
             </div>
             <Link href="/blog">Insights</Link>
-            <Link href="/resources">Resources</Link>
+            {/* <Link href="/resources">Resources</Link> */}
             <Link href="/faq">FAQ</Link>
             <Link href={isHome ? "#contact" : "/#contact"} className="nav-cta"
               onClick={isHome ? (e) => handleNavClick(e as React.MouseEvent<HTMLAnchorElement>, "#contact") : undefined}
@@ -98,7 +98,7 @@ export default function Navigation() {
         <Link href="/services/portfolio-advisory" onClick={() => setMenuOpen(false)}>Portfolio Advisory</Link>
         <Link href="/services/entrepreneur-coaching" onClick={() => setMenuOpen(false)}>Entrepreneur Coaching</Link>
         <Link href="/blog" onClick={() => setMenuOpen(false)}>Insights</Link>
-        <Link href="/resources" onClick={() => setMenuOpen(false)}>Resources</Link>
+        {/* <Link href="/resources" onClick={() => setMenuOpen(false)}>Resources</Link> */}
         <Link href="/faq" onClick={() => setMenuOpen(false)}>FAQ</Link>
         <Link href="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>

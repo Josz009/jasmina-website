@@ -7,10 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const regions = [
-  { name: "Europe", desc: "Banking and financial services across Macedonia, Serbia, and the broader Balkans region." },
-  { name: "Middle East", desc: "International trade credit and risk assessment across diverse markets and economies." },
-  { name: "Americas", desc: "Regional underwriting specialist at AIG, managing trade credit portfolios across the South-Central Zone." },
+const pillars = [
+  { name: "Financial Precision", desc: "Two decades of experience in trade credit insurance, risk analysis, and financial advisory — delivering clarity through data-driven insight." },
+  { name: "Cultural Fluency", desc: "A truly international perspective shaped by working across European, Middle Eastern, and American markets — fluent in three languages." },
+  { name: "Conscious Leadership", desc: "Certified coaching, NLP, and human development expertise — helping leaders align decisions with values for sustainable, meaningful impact." },
 ];
 
 const languages = [
@@ -64,20 +64,21 @@ export default function GlobalExperience() {
         <div className="global-top">
           <span className="sec-tag sec-tag-gold">global perspective</span>
           <h2 className="sec-title sec-title-light">
-            Three Continents. Three Languages. <em>One Mission.</em>
+            One Mission. <em>Global Reach.</em>
           </h2>
           <div className="sec-rule sec-rule-gold" />
           <p className="sec-desc sec-desc-light">
-            A truly international perspective shaped by decades of experience across
-            diverse markets, cultures, and financial systems.
+            A truly international perspective built on decades of experience across
+            diverse markets, cultures, and financial systems — serving clients with
+            precision, empathy, and purpose.
           </p>
         </div>
 
         <div className="global-regions">
-          {regions.map((region, i) => (
+          {pillars.map((pillar, i) => (
             <div className="global-region" key={i}>
-              <h4>{region.name}</h4>
-              <p>{region.desc}</p>
+              <h4>{pillar.name}</h4>
+              <p>{pillar.desc}</p>
             </div>
           ))}
         </div>

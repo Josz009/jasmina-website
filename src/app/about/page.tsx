@@ -14,7 +14,7 @@ const timeline = [
   { year: "2002", title: "Bachelor's Degree in Management", desc: "Foundation in business strategy, entrepreneurship, finance, and organizational leadership." },
   { year: "2002", title: "High School Teacher — Management & Business", desc: "Developed future professionals while strengthening communication, structure, and leadership capabilities." },
   { year: "2003", title: "Underwriter & Senior Underwriter — Development Bank of N. Macedonia", desc: "Introduced and adapted European trade credit insurance models to Macedonian legislation and market conditions, contributing to financial infrastructure development." },
-  { year: "2017", title: "Underwriting Specialist — AIG", desc: "Managed complex global risk portfolios and structured insurance solutions protecting international transactions." },
+  { year: "2017", title: "Underwriting Specialist", desc: "Managed complex global risk portfolios and structured insurance solutions protecting international transactions." },
   { year: "2019", title: "Certified Coach — Maxwell Leadership", desc: "Earned certification as a Coach, Trainer & Speaker through the Maxwell Leadership program — a globally recognized leadership development organization." },
   { year: "2020", title: "NLP Practitioner Certification — AIP", desc: "Certified through the Association for Integrative Psychology, building expertise in neuro-linguistic programming and behavioral change." },
   { year: "2021", title: "Master NLP Practitioner — AIP", desc: "Advanced NLP certification through the Association for Integrative Psychology, deepening expertise in decision psychology and human performance." },

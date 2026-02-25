@@ -11,7 +11,7 @@ export default function PortfolioAdvisory() {
       title="AR Portfolio & Trading"
       titleAccent="Risk Advisory"
       subtitle="for active traders & investors"
-      heroImage="/images/stock/financial-charts.jpg"
+      heroImage="/images/stock/service-portfolio.jpg"
       intro="I help trading companies make more disciplined and confident trading decisions by analyzing their portfolio risk, exposure, and sector concentration. This advisory is designed for smaller trading companies that do not have an internal credit function but still carry significant balance-sheet risk through receivables and customer exposure."
       detailImage="/images/stock/trading-desk.jpg"
       benefits={[

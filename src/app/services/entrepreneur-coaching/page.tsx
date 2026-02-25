@@ -11,7 +11,7 @@ export default function EntrepreneurCoaching() {
       title="Entrepreneur"
       titleAccent="Coaching"
       subtitle="for entrepreneurs, individuals & business owners"
-      heroImage="/images/stock/coaching-session.jpg"
+      heroImage="/images/stock/service-coaching.jpg"
       intro="I work with entrepreneurs and individuals to understand their decision-making style, resilience patterns, and leadership approach — so they can build and grow businesses that are fully aligned with their values. True growth is not only financial. It is growth that contributes — to your team, your clients, and the communities you are part of. It is about building success in a way that is sustainable, responsible, and harmonized with the larger ecosystem around you. Everything we do carries an internal strategy. Business strategy begins with personal strategy. Our work starts at the individual level — identifying patterns, behaviors, and underlying processes that shape how you lead, decide, and respond to risk. From there, we optimize your decision-making, strengthen your natural advantages, and create disciplined awareness around risk. The goal is to maximize your strengths, moderate unnecessary exposure, and cultivate a deep sense of purpose — so your business growth is not accidental, but intentional. Because sustainable success is built from the inside out."
       detailImage="/images/lifestyle.jpg"
       benefits={[
