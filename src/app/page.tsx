@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
 import Services from "@/components/Services";
+import AlignBanner from "@/components/AlignBanner";
 import Philosophy from "@/components/Philosophy";
 import Process from "@/components/Process";
 import Packages from "@/components/Packages";
@@ -27,6 +28,7 @@ export default function Home() {
       <TrustBar />
       <DecorativeDivider variant="squares" />
       <Services />
+      <AlignBanner />
       <Philosophy />
       <DecorativeDivider variant="squares" />
       <Process />

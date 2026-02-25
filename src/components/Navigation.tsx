@@ -61,6 +61,11 @@ export default function Navigation() {
                 <Link href="/services/entrepreneur-coaching" onClick={() => setServicesOpen(false)}>
                   Entrepreneur Coaching
                 </Link>
+                <div className="nav-dropdown-divider" />
+                <Link href="/align-method" onClick={() => setServicesOpen(false)} className="nav-dropdown-align">
+                  The ALIGN Method&trade;
+                  <span className="nav-align-badge">Premium</span>
+                </Link>
               </div>
             </div>
             <Link href="/blog">Insights</Link>
@@ -97,6 +102,7 @@ export default function Navigation() {
         <Link href="/services/business-acquisition" onClick={() => setMenuOpen(false)}>Business Acquisition</Link>
         <Link href="/services/portfolio-advisory" onClick={() => setMenuOpen(false)}>Portfolio Advisory</Link>
         <Link href="/services/entrepreneur-coaching" onClick={() => setMenuOpen(false)}>Entrepreneur Coaching</Link>
+        <Link href="/align-method" onClick={() => setMenuOpen(false)} className="mobile-align-link">The ALIGN Method&trade;</Link>
         <Link href="/blog" onClick={() => setMenuOpen(false)}>Insights</Link>
         {/* <Link href="/resources" onClick={() => setMenuOpen(false)}>Resources</Link> */}
         <Link href="/faq" onClick={() => setMenuOpen(false)}>FAQ</Link>

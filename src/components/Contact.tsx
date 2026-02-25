@@ -127,6 +127,7 @@ export default function Contact() {
                 <option>Business Acquisition Financial Analysis</option>
                 <option>Portfolio &amp; Trading Risk Advisory</option>
                 <option>Entrepreneur Coaching</option>
+                <option>The ALIGN Method&trade;</option>
                 <option>Not sure yet — let&apos;s talk</option>
               </select>
 

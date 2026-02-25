@@ -96,7 +96,7 @@ export default function Services() {
           </p>
         </div>
         <div className="srv-grid" ref={cardsRef}>
-          {services.map((srv) => (
+          {services.map((srv, i) => (
             <Link href={`/services/${srv.slug}`} key={srv.slug} style={{ textDecoration: "none" }}>
               <div className="srv-card">
                 <div className="srv-card-img">
@@ -113,6 +113,25 @@ export default function Services() {
                 <p>{srv.desc}</p>
                 <div className="srv-for">{srv.target}</div>
                 <span className="srv-link">Learn More &rarr;</span>
+                {i === 2 && (
+                  <div style={{ marginTop: 16, paddingTop: 16, borderTop: "1px solid rgba(201,149,43,0.15)" }}>
+                    <Link
+                      href="/align-method"
+                      onClick={(e) => e.stopPropagation()}
+                      style={{
+                        fontFamily: "var(--font-display)",
+                        fontSize: "0.82rem",
+                        fontStyle: "italic",
+                        color: "var(--color-gold)",
+                        textDecoration: "none",
+                        letterSpacing: "0.5px",
+                        transition: "opacity 0.3s",
+                      }}
+                    >
+                      Explore The ALIGN Method&trade; &rarr;
+                    </Link>
+                  </div>
+                )}
               </div>
             </Link>
           ))}
