@@ -102,7 +102,7 @@ export default function ServicePage({
         <div style={{
           position: "absolute",
           inset: 0,
-          background: "linear-gradient(180deg, rgba(26,16,40,0.88) 0%, rgba(36,24,56,0.8) 50%, rgba(26,16,40,0.92) 100%)",
+          background: "linear-gradient(180deg, rgba(26,16,40,0.72) 0%, rgba(36,24,56,0.65) 50%, rgba(26,16,40,0.78) 100%)",
         }} />
         {/* Soft radial vignette behind text */}
         <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "radial-gradient(ellipse 60% 50% at 50% 45%, rgba(26,16,40,0.5) 0%, transparent 100%)", pointerEvents: "none" }} />

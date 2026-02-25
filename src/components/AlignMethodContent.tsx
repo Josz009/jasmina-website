@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -69,6 +70,20 @@ export default function AlignMethodContent() {
     <div ref={pageRef}>
       {/* Hero */}
       <section className="am-hero">
+        <Image
+          src="/images/stock/align-hero.jpg"
+          alt="The ALIGN Method"
+          fill
+          priority
+          style={{ objectFit: "cover" }}
+          sizes="100vw"
+        />
+        <div style={{
+          position: "absolute",
+          inset: 0,
+          background: "linear-gradient(180deg, rgba(26,16,40,0.72) 0%, rgba(36,24,56,0.65) 50%, rgba(26,16,40,0.78) 100%)",
+          zIndex: 1,
+        }} />
         <div className="am-hero-bg" />
         {/* Gold border lines */}
         <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg, transparent 10%, var(--color-gold) 50%, transparent 90%)", opacity: 0.35 }} />
