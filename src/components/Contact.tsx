@@ -125,8 +125,8 @@ export default function Contact() {
               <select name="service" defaultValue="">
                 <option value="" disabled>Select a service...</option>
                 <option>Business Acquisition Financial Analysis</option>
-                <option>Portfolio &amp; Trading Risk Advisory</option>
-                <option>Entrepreneur Coaching</option>
+                <option>AR Portfolio &amp; Trading Risk Advisory</option>
+                <option>1-1 Intensive Coaching</option>
                 <option>The ALIGN Method&trade;</option>
                 <option>Not sure yet — let&apos;s talk</option>
               </select>
