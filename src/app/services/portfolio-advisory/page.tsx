@@ -1,7 +1,7 @@
 import ServicePage from "@/components/ServicePage";
 
 export const metadata = {
-  title: "Portfolio & Trading Risk Advisory — J&A Business Advisory",
+  title: "Account Receivables Portfolio & Trading Risk Advisory — J&A Business Advisory",
   description: "Expert portfolio risk assessment and trading advisory. Understand your exposure, optimize position weighting, and trade with disciplined confidence.",
 };
 

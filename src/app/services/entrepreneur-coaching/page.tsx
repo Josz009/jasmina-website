@@ -1,18 +1,18 @@
 import ServicePage from "@/components/ServicePage";
 
 export const metadata = {
-  title: "Entrepreneur Coaching — J&A Business Advisory",
-  description: "Executive coaching for entrepreneurs and business owners. Develop your decision-making framework, leadership approach, and business strategy with clarity.",
+  title: "1-1 Intensive Coaching — J&A Business Advisory",
+  description: "Intensive 90-minute coaching for entrepreneurs and individuals. Focus on 1–2 specific areas where you need clarity, momentum, or strategic support.",
 };
 
 export default function EntrepreneurCoaching() {
   return (
     <ServicePage
-      title="Entrepreneur"
-      titleAccent="Coaching"
-      subtitle="for entrepreneurs, individuals & business owners"
+      title="1-1 Intensive Coaching"
+      titleAccent="for Entrepreneurs and Individuals"
+      subtitle="clarity, momentum & strategic support"
       heroImage="/images/stock/service-coaching.jpg"
-      intro="I work with entrepreneurs and individuals to understand their decision-making style, resilience patterns, and leadership approach — so they can build and grow businesses that are fully aligned with their values. True growth is not only financial. It is growth that contributes — to your team, your clients, and the communities you are part of. It is about building success in a way that is sustainable, responsible, and harmonized with the larger ecosystem around you. Everything we do carries an internal strategy. Business strategy begins with personal strategy. Our work starts at the individual level — identifying patterns, behaviors, and underlying processes that shape how you lead, decide, and respond to risk. From there, we optimize your decision-making, strengthen your natural advantages, and create disciplined awareness around risk. The goal is to maximize your strengths, moderate unnecessary exposure, and cultivate a deep sense of purpose — so your business growth is not accidental, but intentional. Because sustainable success is built from the inside out."
+      intro="This is a 90-minute intensive with Jasmina designed to focus on 1–2 specific areas where you need clarity, momentum, or strategic support in your life or business. In addition to receiving a clear action plan, you will receive personalized feedback, a summary of the coaching session, and a 30-minute follow-up session with Jasmina to ensure implementation. These sessions take place virtually (online coaching format) and require completion of a thorough intake form prior to the session. This experience is designed for clients who are ready for meaningful progress. It requires openness, self-awareness, and a flexible mindset — a willingness to explore new perspectives, challenge existing patterns, and open to take actions."
       detailImage="/images/lifestyle.jpg"
       benefits={[
         { title: "Pattern Identification", desc: "Uncover the patterns in how you think, decide, and lead — so you can keep what works and change what doesn't." },
@@ -26,6 +26,15 @@ export default function EntrepreneurCoaching() {
         { step: 3, title: "Coaching Program", desc: "Regular 1-on-1 sessions focused on building your decision-making confidence and strategic thinking skills." },
         { step: 4, title: "Monthly Accountability", desc: "Ongoing check-ins to track progress, address new challenges, and keep your growth trajectory on course." },
       ]}
+      pricing={{
+        price: "$555",
+        steps: [
+          "Complete your payment securely online.",
+          "You\u2019ll be directed to a thorough intake questionnaire to help Jasmina prepare for your session.",
+          "Once submitted, your appointment becomes available to schedule within 24 hours.",
+          "Attend your 90-minute virtual intensive — plus receive a 30-minute follow-up session to ensure implementation.",
+        ],
+      }}
       quote="It's not just what you do — it's how you do it."
     />
   );

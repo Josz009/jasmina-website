@@ -19,7 +19,7 @@ const services = [
         <path d="M16 17V13" />
       </svg>
     ),
-    image: "/images/stock/executive-meeting.jpg",
+    image: "/images/stock/business-handshake.jpg",
     title: "Business Acquisition Financial Analysis",
     desc: "Comprehensive analysis of financial statements, cash flow, and risk exposure — giving you a clear view before you commit.",
     target: "For Buyers & Investors",
@@ -32,8 +32,8 @@ const services = [
         <path d="M12 7v5l3 3" />
       </svg>
     ),
-    image: "/images/stock/financial-charts.jpg",
-    title: "Portfolio & Trading Risk Advisory",
+    image: "/images/stock/trading-chart-red.png",
+    title: "Account Receivables Portfolio & Trading Risk Advisory",
     desc: "Rigorous evaluation of portfolio risk, position weighting, and exposure so you can trade with discipline and confidence.",
     target: "For Active Traders & Investors",
   },
@@ -46,10 +46,10 @@ const services = [
         <path d="M2 12l10 5 10-5" />
       </svg>
     ),
-    image: "/images/stock/modern-workspace.jpg",
-    title: "Entrepreneur Coaching",
-    desc: "Personalized coaching to understand your decision-making style, risk tolerance, and leadership approach.",
-    target: "For Entrepreneurs & Owners",
+    image: "/images/stock/coaching-chess.jpg",
+    title: "1-1 Intensive Coaching",
+    desc: "A 90-minute intensive with Jasmina designed to focus on 1–2 specific areas where you need clarity, momentum, or strategic support in your life or business.",
+    target: "For Entrepreneurs & Individuals",
   },
 ];
 

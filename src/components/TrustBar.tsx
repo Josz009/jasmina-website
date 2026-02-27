@@ -18,7 +18,7 @@ const credentials = [
       <path d="M20 4l4 8h8l-6 5 2 9-8-5-8 5 2-9-6-5h8z" />
     </svg>
   )},
-  { name: "Trade Credit University", desc: "Certified", icon: (
+  { name: "Trade Credit Specialty", desc: "Experience for 2 Decades", icon: (
     <svg viewBox="0 0 40 40" fill="none" stroke="var(--color-gold)" strokeWidth="1">
       <path d="M6 16l14-8 14 8-14 8z" />
       <path d="M10 18v10c0 2 4.5 4 10 4s10-2 10-4V18" />

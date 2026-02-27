@@ -21,6 +21,11 @@ interface ProcessStep {
   desc: string;
 }
 
+interface PricingInfo {
+  price: string;
+  steps: string[];
+}
+
 interface ServicePageProps {
   title: string;
   titleAccent: string;
@@ -31,10 +36,11 @@ interface ServicePageProps {
   benefits: Benefit[];
   process: ProcessStep[];
   quote: string;
+  pricing?: PricingInfo;
 }
 
 export default function ServicePage({
-  title, titleAccent, subtitle, heroImage, intro, detailImage, benefits, process, quote,
+  title, titleAccent, subtitle, heroImage, intro, detailImage, benefits, process, quote, pricing,
 }: ServicePageProps) {
   const pageRef = useRef<HTMLDivElement>(null);
 
@@ -295,6 +301,47 @@ export default function ServicePage({
           </blockquote>
         </div>
       </section>
+
+      {/* Pricing / Booking Flow */}
+      {pricing && (
+        <section style={{ padding: "72px 56px", background: "var(--color-off-white)", textAlign: "center" }}>
+          <div style={{ maxWidth: 640, margin: "0 auto" }}>
+            <span className="sec-tag sec-tag-gold" style={{ marginBottom: 16, display: "block" }}>investment</span>
+            <div style={{
+              fontFamily: "var(--font-display)",
+              fontSize: "3rem",
+              fontWeight: 400,
+              color: "var(--color-deep)",
+              marginBottom: 8,
+            }}>
+              {pricing.price}
+            </div>
+            <div style={{ width: 40, height: 1, background: "var(--color-gold)", margin: "0 auto 32px" }} />
+            <div style={{ display: "flex", flexDirection: "column", gap: 16, textAlign: "left", maxWidth: 460, margin: "0 auto" }}>
+              {pricing.steps.map((step, i) => (
+                <div key={i} style={{ display: "flex", gap: 16, alignItems: "flex-start" }}>
+                  <div style={{
+                    width: 28, height: 28, borderRadius: "50%",
+                    border: "1px solid var(--color-gold)",
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    flexShrink: 0,
+                    fontFamily: "var(--font-display)", fontSize: "0.85rem",
+                    color: "var(--color-gold)", fontWeight: 600,
+                  }}>
+                    {i + 1}
+                  </div>
+                  <p style={{
+                    fontSize: "0.88rem", lineHeight: 1.7,
+                    color: "var(--color-body)", margin: 0, paddingTop: 3,
+                  }}>
+                    {step}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Decorative Divider */}
       <div style={{ background: "var(--color-off-white)", padding: "32px 0" }}>

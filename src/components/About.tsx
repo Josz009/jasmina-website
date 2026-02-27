@@ -98,16 +98,13 @@ export default function About() {
               banking, paired with coaching principles that unlock how you think, decide,
               and lead.
             </p>
-            <p>
-              Fluent in three languages, experienced across three continents — I bring a
-              global perspective to every engagement.
-            </p>
+            {/* Removed: "Fluent in three languages..." sentence */}
             <div className="creds">
-              <span className="cred cred-dark">Regional Underwriting Specialist</span>
+              <span className="cred cred-dark">20+ Years in Finance</span>
               <span className="cred cred-gold">MER® & Hypnotherapy (AIP)</span>
               <span className="cred cred-dark">Maxwell Certified Coach</span>
               <span className="cred cred-dark">BA Management</span>
-              <span className="cred cred-gold">3 Languages</span>
+              <span className="cred cred-gold">Gene Keys Guide</span>
             </div>
           </div>
         </div>

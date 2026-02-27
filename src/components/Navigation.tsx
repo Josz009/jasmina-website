@@ -56,10 +56,10 @@ export default function Navigation() {
                   Business Acquisition Analysis
                 </Link>
                 <Link href="/services/portfolio-advisory" onClick={() => setServicesOpen(false)}>
-                  Portfolio & Trading Advisory
+                  AR Portfolio & Trading Advisory
                 </Link>
                 <Link href="/services/entrepreneur-coaching" onClick={() => setServicesOpen(false)}>
-                  Entrepreneur Coaching
+                  1-1 Intensive Coaching
                 </Link>
                 <div className="nav-dropdown-divider" />
                 <Link href="/align-method" onClick={() => setServicesOpen(false)} className="nav-dropdown-align">
@@ -70,7 +70,7 @@ export default function Navigation() {
             </div>
             <Link href="/blog">Insights</Link>
             {/* <Link href="/resources">Resources</Link> */}
-            <Link href="/faq">FAQ</Link>
+            {/* <Link href="/faq">FAQ</Link> */}
             <Link href={isHome ? "#contact" : "/#contact"} className="nav-cta"
               onClick={isHome ? (e) => handleNavClick(e as React.MouseEvent<HTMLAnchorElement>, "#contact") : undefined}
             >
@@ -100,12 +100,12 @@ export default function Navigation() {
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <Link href="/about" onClick={() => setMenuOpen(false)}>About</Link>
         <Link href="/services/business-acquisition" onClick={() => setMenuOpen(false)}>Business Acquisition</Link>
-        <Link href="/services/portfolio-advisory" onClick={() => setMenuOpen(false)}>Portfolio Advisory</Link>
-        <Link href="/services/entrepreneur-coaching" onClick={() => setMenuOpen(false)}>Entrepreneur Coaching</Link>
+        <Link href="/services/portfolio-advisory" onClick={() => setMenuOpen(false)}>AR Portfolio & Trading Advisory</Link>
+        <Link href="/services/entrepreneur-coaching" onClick={() => setMenuOpen(false)}>1-1 Intensive Coaching</Link>
         <Link href="/align-method" onClick={() => setMenuOpen(false)} className="mobile-align-link">The ALIGN Method&trade;</Link>
         <Link href="/blog" onClick={() => setMenuOpen(false)}>Insights</Link>
         {/* <Link href="/resources" onClick={() => setMenuOpen(false)}>Resources</Link> */}
-        <Link href="/faq" onClick={() => setMenuOpen(false)}>FAQ</Link>
+        {/* <Link href="/faq" onClick={() => setMenuOpen(false)}>FAQ</Link> */}
         <Link href="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>
       </div>
     </>
