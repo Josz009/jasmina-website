@@ -6,10 +6,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const stats = [
+const stats: { number: number; suffix: string; label: string; textOnly?: boolean }[] = [
   { number: 20, suffix: "+", label: "Years in Finance" },
   { number: 3, suffix: "", label: "Languages Fluent" },
-  { number: 3, suffix: "", label: "Global Experience" },
+  { number: 0, suffix: "", label: "Global Experience", textOnly: true },
   { number: 25, suffix: "M+", label: "Underwriting Authority" },
 ];
 
@@ -23,6 +23,7 @@ export default function Stats() {
       const counters = sectionRef.current!.querySelectorAll(".stat-number");
 
       counters.forEach((counter) => {
+        if (counter.getAttribute("data-text-only") === "true") return;
         const target = parseInt(counter.getAttribute("data-target") || "0");
         const suffix = counter.getAttribute("data-suffix") || "";
         const prefix = counter.getAttribute("data-prefix") || "";
@@ -61,8 +62,9 @@ export default function Stats() {
               data-target={stat.number}
               data-suffix={stat.suffix}
               data-prefix={stat.number === 25 ? "$" : ""}
+              data-text-only={stat.textOnly ? "true" : undefined}
             >
-              {stat.number === 25 ? "$0M+" : `0${stat.suffix}`}
+              {stat.textOnly ? "✦" : stat.number === 25 ? "$0M+" : `0${stat.suffix}`}
             </div>
             <div className="stat-label">{stat.label}</div>
           </div>
