@@ -38,7 +38,7 @@ export default function RootLayout({
               "@type": "ProfessionalService",
               name: "J&A Business Advisory & Coaching",
               description: "Financial advisory, risk analysis, and executive coaching services",
-              email: "jasminavigil79@gmail.com",
+              email: "align@jabusinesscoaching.com",
               founder: {
                 "@type": "Person",
                 name: "Jasmina Kolekjeska",
