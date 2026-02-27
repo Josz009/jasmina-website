@@ -103,9 +103,6 @@ export default function AboutPage() {
                 Move from stress to confidence.<br />From unease to clarity.
               </p>
             </div>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
-              <span className="cred cred-gold">Maxwell Certified Coach</span>
-            </div>
           </div>
         </div>
       </section>
