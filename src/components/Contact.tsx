@@ -51,6 +51,7 @@ export default function Contact() {
       if (res.ok) {
         setSubmitted(true);
         form.reset();
+        setTimeout(() => setSubmitted(false), 5000);
       }
     } catch {
       alert("Something went wrong. Please email align@jabusinesscoaching.com directly.");
