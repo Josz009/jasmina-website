@@ -53,7 +53,7 @@ export default function Contact() {
         form.reset();
       }
     } catch {
-      alert("Something went wrong. Please email jasminavigil79@gmail.com directly.");
+      alert("Something went wrong. Please email align@jabusinesscoaching.com directly.");
     }
 
     setSubmitting(false);
@@ -79,7 +79,7 @@ export default function Contact() {
                 <path d="M22 4L12 13 2 4" />
               </svg>
             </div>
-            <a href="mailto:jasminavigil79@gmail.com">jasminavigil79@gmail.com</a>
+            <a href="mailto:align@jabusinesscoaching.com">align@jabusinesscoaching.com</a>
           </div>
 
 
