@@ -46,7 +46,7 @@ const services = [
         <path d="M2 12l10 5 10-5" />
       </svg>
     ),
-    image: "/images/stock/coaching-chess.jpg",
+    image: "/images/stock/coaching-collage.png",
     title: "1-1 Intensive Coaching",
     desc: "A 90-minute intensive with Jasmina designed to focus on 1–2 specific areas where you need clarity, momentum, or strategic support in your life or business.",
     target: "For Entrepreneurs & Individuals",
