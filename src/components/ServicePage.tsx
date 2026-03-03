@@ -24,6 +24,7 @@ interface ProcessStep {
 interface PricingInfo {
   price: string;
   steps: string[];
+  bookingUrl?: string;
 }
 
 interface ServicePageProps {
@@ -339,6 +340,30 @@ export default function ServicePage({
                 </div>
               ))}
             </div>
+            {pricing.bookingUrl && (
+              <a
+                href={pricing.bookingUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  marginTop: 40,
+                  background: "var(--color-gold)",
+                  color: "var(--color-deep)",
+                  padding: "16px 52px",
+                  fontFamily: "var(--font-body)",
+                  fontSize: "0.78rem",
+                  fontWeight: 700,
+                  textDecoration: "none",
+                  letterSpacing: "1.5px",
+                  textTransform: "uppercase" as const,
+                  borderRadius: 2,
+                  transition: "all 0.3s",
+                }}
+              >
+                Book Your Session
+              </a>
+            )}
           </div>
         </section>
       )}
