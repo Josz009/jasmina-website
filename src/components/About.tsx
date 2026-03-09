@@ -94,9 +94,9 @@ export default function About() {
               Certified in Mental and Emotional Release® and Hypnotherapy through
               the Association of Integrative Psychology (AIP), and a John C. Maxwell Certified
               Coach, Trainer, and Speaker, I bring a rare combination: the analytical
-              precision of two decades in trade credit insurance and international
-              banking, paired with coaching principles that unlock how you think, decide,
-              and lead.
+              precision of two decades of multinational trade credit insurance and
+              multinational banking, paired with coaching principles that unlock how you
+              think, decide, and lead.
             </p>
             {/* Removed: "Fluent in three languages..." sentence */}
             <div className="creds">
