@@ -28,7 +28,7 @@ export default function EntrepreneurCoaching() {
       ]}
       pricing={{
         price: "$555",
-        bookingUrl: "https://buy.stripe.com/PLACEHOLDER",
+        bookingUrl: "https://buy.stripe.com/28E00k5sJ2ei9Dg6ZB2B200",
         steps: [
           "Complete your payment securely online.",
           "You\u2019ll be directed to a thorough intake questionnaire to help Jasmina prepare for your session.",
