@@ -130,22 +130,41 @@ export default function ServicePage({
           <p style={{ fontSize: "0.95rem", lineHeight: 1.85, color: "rgba(250,246,238,0.82)", maxWidth: 560, margin: "0 auto", textShadow: "0 1px 16px rgba(0,0,0,0.3)" }}>
             {intro}
           </p>
-          <Link href="/#contact" style={{
-            display: "inline-block",
-            marginTop: 36,
-            background: "var(--color-gold)",
-            color: "var(--color-deep)",
-            padding: "14px 40px",
-            fontFamily: "var(--font-body)",
-            fontSize: "0.78rem",
-            fontWeight: 700,
-            textDecoration: "none",
-            letterSpacing: "1.5px",
-            textTransform: "uppercase" as const,
-            borderRadius: 2,
-          }}>
-            Get Started
-          </Link>
+          {pricing?.bookingUrl ? (
+            <a href={pricing.bookingUrl} target="_blank" rel="noopener noreferrer" style={{
+              display: "inline-block",
+              marginTop: 36,
+              background: "var(--color-gold)",
+              color: "var(--color-deep)",
+              padding: "14px 40px",
+              fontFamily: "var(--font-body)",
+              fontSize: "0.78rem",
+              fontWeight: 700,
+              textDecoration: "none",
+              letterSpacing: "1.5px",
+              textTransform: "uppercase" as const,
+              borderRadius: 2,
+            }}>
+              Book Now
+            </a>
+          ) : (
+            <Link href="/#contact" style={{
+              display: "inline-block",
+              marginTop: 36,
+              background: "var(--color-gold)",
+              color: "var(--color-deep)",
+              padding: "14px 40px",
+              fontFamily: "var(--font-body)",
+              fontSize: "0.78rem",
+              fontWeight: 700,
+              textDecoration: "none",
+              letterSpacing: "1.5px",
+              textTransform: "uppercase" as const,
+              borderRadius: 2,
+            }}>
+              Get Started
+            </Link>
+          )}
         </div>
       </section>
 
