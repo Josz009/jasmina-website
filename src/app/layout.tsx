@@ -10,11 +10,17 @@ export const metadata: Metadata = {
     description: "Expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching. 20+ years in global finance.",
     type: "website",
     locale: "en_US",
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "J&A Business Advisory & Coaching" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "J&A Business Advisory & Coaching — Financial Advisory & Executive Coaching",
     description: "Expert business acquisition analysis, portfolio risk advisory, and entrepreneur coaching.",
+    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
