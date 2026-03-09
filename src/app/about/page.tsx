@@ -20,7 +20,7 @@ const timeline = [
   { year: "2021", title: "Master NLP Practitioner — AIP", desc: "Advanced NLP certification through the Association for Integrative Psychology, deepening expertise in decision psychology and human performance." },
   { year: "2021", title: "HeartMath Coherence Certification", desc: "Training in heart-brain synchronization and psychophysiological coherence — regulating the nervous system, increasing emotional self-regulation, and aligning heart rhythms, breath, and brain activity." },
   { year: "2022", title: "Mental & Emotional Release® & Hypnotherapy — AIP", desc: "Certified in MER® and Hypnotherapy through the Association of Integrative Psychology, integrating behavioral science into coaching practice." },
-  { year: "2026", title: "Gene Keys Guide Certification", desc: "Deep shadow work rooted in contemplation that creates space for clear vision and true productivity." },
+  { year: "2026", title: "Gene Keys Guide", desc: "Deep shadow work rooted in contemplation that creates space for clear vision and true productivity." },
   { year: "2026", title: "J&A Business Advisory & Coaching", desc: "Established a boutique advisory and coaching practice integrating financial risk expertise, decision psychology, and conscious leadership to support individuals, entrepreneurs, and business leaders." },
 ];
 
