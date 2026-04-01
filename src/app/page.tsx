@@ -34,7 +34,7 @@ export default function Home() {
       <Process />
       <Packages />
       {/* <Results /> */}
-      {/* <Testimonials /> */}
+      <Testimonials />
       <DecorativeDivider variant="squares" />
       <GlobalExperience />
       <Contact />
