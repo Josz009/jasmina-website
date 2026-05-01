@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intensive 1:1 Coaching — Intake Questionnaire</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      color: #2d2440;
+      line-height: 1.6;
+      background: #fff;
+    }
+
+    .page {
+      max-width: 750px;
+      margin: 0 auto;
+      padding: 48px 56px;
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1.5px solid #C9952B;
+    }
+
+    .header img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: #1a1028;
+      margin-bottom: 4px;
+    }
+
+    .header h1 em {
+      font-style: italic;
+      color: #C9952B;
+    }
+
+    .header .subtitle {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #C9952B;
+      margin-bottom: 8px;
+    }
+
+    .header p {
+      font-size: 0.82rem;
+      color: #5a4d68;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* Section titles */
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #1a1028;
+      margin-bottom: 6px;
+      margin-top: 36px;
+    }
+
+    h2 .num {
+      color: #C9952B;
+      font-weight: 400;
+      opacity: 0.6;
+      margin-right: 8px;
+    }
+
+    .section-rule {
+      width: 40px;
+      height: 1.5px;
+      background: #C9952B;
+      margin-bottom: 20px;
+    }
+
+    /* Fields */
+    .field {
+      margin-bottom: 20px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #5a4d68;
+      margin-bottom: 8px;
+    }
+
+    .field .line {
+      border-bottom: 1px solid #d4cfe0;
+      height: 28px;
+    }
+
+    .field .lines {
+      min-height: 80px;
+      border: 1px solid #d4cfe0;
+      border-radius: 2px;
+      padding: 8px;
+    }
+
+    .field .lines-tall {
+      min-height: 120px;
+    }
+
+    .field-hint {
+      font-size: 0.78rem;
+      color: #8a7d9a;
+      font-style: italic;
+      margin-bottom: 8px;
+    }
+
+    /* Honesty note */
+    .honesty-note {
+      background: rgba(201, 149, 43, 0.05);
+      border-left: 3px solid #C9952B;
+      padding: 20px 24px;
+      margin: 24px 0;
+      border-radius: 0 2px 2px 0;
+    }
+
+    .honesty-note p {
+      font-size: 0.84rem;
+      line-height: 1.7;
+      color: #5a4d68;
+      margin-bottom: 10px;
+    }
+
+    .honesty-note p:last-child { margin-bottom: 0; }
+    .honesty-note strong { color: #1a1028; }
+    .honesty-note em { color: #C9952B; }
+
+    /* Assessment */
+    .assessment-intro {
+      margin: 24px 0;
+      padding: 16px 20px;
+      background: #f8f6f2;
+      border-radius: 2px;
+    }
+
+    .assessment-intro p {
+      font-size: 0.82rem;
+      color: #5a4d68;
+      margin-bottom: 6px;
+    }
+
+    .assessment-intro p:last-child { margin-bottom: 0; }
+
+    .scale-legend {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .scale-legend span {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #5a4d68;
+    }
+
+    .assessment-section {
+      margin-bottom: 28px;
+      padding: 24px;
+      border: 1px solid rgba(201, 149, 43, 0.12);
+      border-radius: 2px;
+      page-break-inside: avoid;
+    }
+
+    .assessment-section h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #1a1028;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(201, 149, 43, 0.08);
+    }
+
+    .assessment-section h3 .sec-num {
+      color: #C9952B;
+      font-weight: 400;
+      opacity: 0.5;
+      margin-right: 8px;
+    }
+
+    .statement-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px dotted #e8e4ee;
+    }
+
+    .statement-row:last-child {
+      border-bottom: none;
+    }
+
+    .statement-text {
+      font-size: 0.84rem;
+      color: #5a4d68;
+      flex: 1;
+      padding-right: 20px;
+    }
+
+    .statement-score {
+      width: 60px;
+      height: 28px;
+      border: 1px solid #d4cfe0;
+      border-radius: 2px;
+      text-align: center;
+      flex-shrink: 0;
+      font-size: 0.8rem;
+      color: #C9952B;
+    }
+
+    .section-score-row {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(201, 149, 43, 0.15);
+    }
+
+    .section-score-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #5a4d68;
+      margin-right: 12px;
+    }
+
+    .section-score-box {
+      width: 80px;
+      height: 32px;
+      border: 1.5px solid #C9952B;
+      border-radius: 2px;
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem;
+    }
+
+    /* Overall score */
+    .overall-score {
+      margin-top: 36px;
+      padding: 24px;
+      background: #1a1028;
+      border-radius: 2px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      page-break-inside: avoid;
+    }
+
+    .overall-score span {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
+      color: rgba(250, 246, 238, 0.7);
+    }
+
+    .overall-score .score-box {
+      width: 100px;
+      height: 36px;
+      border: 1.5px solid #C9952B;
+      border-radius: 2px;
+      background: transparent;
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: #C9952B;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(201, 149, 43, 0.15);
+      text-align: center;
+    }
+
+    .footer p {
+      font-size: 0.72rem;
+      color: #8a7d9a;
+      letter-spacing: 0.5px;
+    }
+
+    .footer .brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 0.9rem;
+      color: #C9952B;
+      margin-bottom: 4px;
+    }
+
+    /* Print styles */
+    @media print {
+      body { font-size: 11pt; }
+      .page { padding: 24px 32px; max-width: 100%; }
+      .header { margin-bottom: 28px; padding-bottom: 20px; }
+      h2 { margin-top: 28px; }
+      .assessment-section { page-break-inside: avoid; }
+      .overall-score { page-break-inside: avoid; }
+    }
+
+    @page {
+      margin: 0.6in;
+      size: letter;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header with Logo -->
+    <div class="header">
+      <img src="public/images/logo.png" alt="J&A Business Advisory & Coaching" />
+      <div class="subtitle">Intensive 1:1 Coaching</div>
+      <h1>Integral Alignment &amp; <em>High-Performance Focus</em></h1>
+      <p>With Jasmina Kolekjeska</p>
+    </div>
+
+    <!-- Personal Details -->
+    <h2>Personal Details</h2>
+    <div class="section-rule"></div>
+    <p style="font-size: 0.82rem; color: #8a7d9a; margin-bottom: 16px; font-style: italic;">
+      This information is needed for the hologenetic profile.
+    </p>
+
+    <div class="field">
+      <label>Full Name</label>
+      <div class="line"></div>
+    </div>
+
+    <div class="field">
+      <label>Date of Birth</label>
+      <div class="line"></div>
+    </div>
+
+    <div class="field">
+      <label>Time of Birth <span style="font-weight: 400; text-transform: none; letter-spacing: 0;">(if you don't know, go with the closest assumption)</span></label>
+      <div class="line"></div>
+    </div>
+
+    <div class="field">
+      <label>Place of Birth</label>
+      <div class="line"></div>
+    </div>
+
+    <!-- Pre-Session Questions -->
+    <h2>Pre-Session Reflection</h2>
+    <div class="section-rule"></div>
+
+    <div class="honesty-note">
+      <p>Before our session, please answer the following questions as truthfully and thoroughly as you can.</p>
+      <p><strong>Do not filter. Do not perform. Do not answer the way you think you "should."</strong></p>
+      <p>This is a space for radical honesty.</p>
+      <p>The more transparent and specific you are, the faster we can scratch beneath the surface of the problem and identify the real root — not just the symptom. Depth creates transformation. Precision creates results.</p>
+      <p><em>Take your time.</em></p>
+    </div>
+
+    <div class="field">
+      <label>1. Which specific problem area would you like to focus on during this Intensive 1:1 Coaching session?</label>
+      <p class="field-hint">Be as specific as possible about the situation you want to work on.</p>
+      <div class="lines lines-tall"></div>
+    </div>
+
+    <div class="field">
+      <label>2. Describe the situation briefly in a few sentences.</label>
+      <p class="field-hint">What is happening? What feels stuck or challenging?</p>
+      <div class="lines lines-tall"></div>
+    </div>
+
+    <div class="field">
+      <label>3. What underlying emotions are present for you in this situation?</label>
+      <p class="field-hint">For example: fear, frustration, guilt, sadness, anger, confusion, pressure, etc.</p>
+      <div class="lines"></div>
+    </div>
+
+    <div class="field">
+      <label>4. What would you like to accomplish in this session?</label>
+      <p class="field-hint">What outcome would feel meaningful, relieving, or empowering for you?</p>
+      <div class="lines lines-tall"></div>
+    </div>
+
+    <!-- Assessment -->
+    <h2>The Integral Alignment &amp; Expression Assessment</h2>
+    <div class="section-rule"></div>
+
+    <div class="assessment-intro">
+      <p><strong>Instructions</strong></p>
+      <p>Rate each statement from 0–100:</p>
+      <p>0–35 → Rarely True / Struggling</p>
+      <p>36–65 → Sometimes True / In Progress</p>
+      <p>66–100 → Consistently True / Integrated</p>
+      <p><em>Be honest. This is for awareness, not judgment.</em></p>
+    </div>
+
+    <!-- Section I -->
+    <div class="assessment-section">
+      <h3><span class="sec-num">I</span> Grounded Stability</h3>
+      <div class="statement-row">
+        <span class="statement-text">I regularly restore myself through nature or quiet space.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I proactively care for my wellbeing (not only when something is wrong).</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I regulate myself during stress or unexpected change.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I feel safe and grounded in my body most days.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="section-score-row">
+        <span class="section-score-label">Section Score:</span>
+        <div class="section-score-box"></div>
+        <span style="font-size: 0.72rem; color: #8a7d9a; margin-left: 4px;">/ 100</span>
+      </div>
+    </div>
+
+    <!-- Section II -->
+    <div class="assessment-section">
+      <h3><span class="sec-num">II</span> Emotional Maturity &amp; Relationships</h3>
+      <div class="statement-row">
+        <span class="statement-text">I stay present during challenging conversations.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I maintain healthy and flexible boundaries.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I take ownership of my emotional patterns.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I experience depth and intimacy in key relationships.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="section-score-row">
+        <span class="section-score-label">Section Score:</span>
+        <div class="section-score-box"></div>
+        <span style="font-size: 0.72rem; color: #8a7d9a; margin-left: 4px;">/ 100</span>
+      </div>
+    </div>
+
+    <!-- Section III -->
+    <div class="assessment-section">
+      <h3><span class="sec-num">III</span> Creativity &amp; Adaptive Thinking</h3>
+      <div class="statement-row">
+        <span class="statement-text">I view myself as creative in life or business.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I act on ideas instead of postponing them.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I balance intuition with logic.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I use creativity to move through stuck states.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="section-score-row">
+        <span class="section-score-label">Section Score:</span>
+        <div class="section-score-box"></div>
+        <span style="font-size: 0.72rem; color: #8a7d9a; margin-left: 4px;">/ 100</span>
+      </div>
+    </div>
+
+    <!-- Section IV -->
+    <div class="assessment-section">
+      <h3><span class="sec-num">IV</span> Courage &amp; Change Capacity</h3>
+      <div class="statement-row">
+        <span class="statement-text">I initiate growth rather than waiting for crisis.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I tolerate uncertainty without collapsing into fear.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I move through endings with resilience.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I take aligned risks.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="section-score-row">
+        <span class="section-score-label">Section Score:</span>
+        <div class="section-score-box"></div>
+        <span style="font-size: 0.72rem; color: #8a7d9a; margin-left: 4px;">/ 100</span>
+      </div>
+    </div>
+
+    <!-- Section V -->
+    <div class="assessment-section">
+      <h3><span class="sec-num">V</span> Purpose &amp; Calling</h3>
+      <div class="statement-row">
+        <span class="statement-text">I have clarity around my deeper contribution.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I take consistent action toward it.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I trust the unfolding of my path.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">My inner truth matches my external life.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="section-score-row">
+        <span class="section-score-label">Section Score:</span>
+        <div class="section-score-box"></div>
+        <span style="font-size: 0.72rem; color: #8a7d9a; margin-left: 4px;">/ 100</span>
+      </div>
+    </div>
+
+    <!-- Section VI -->
+    <div class="assessment-section">
+      <h3><span class="sec-num">VI</span> Community &amp; Contribution</h3>
+      <div class="statement-row">
+        <span class="statement-text">I contribute beyond myself.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I feel supported by allies or community.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I ask for help when needed.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I own my impact on others.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="section-score-row">
+        <span class="section-score-label">Section Score:</span>
+        <div class="section-score-box"></div>
+        <span style="font-size: 0.72rem; color: #8a7d9a; margin-left: 4px;">/ 100</span>
+      </div>
+    </div>
+
+    <!-- Section VII -->
+    <div class="assessment-section">
+      <h3><span class="sec-num">VII</span> Brand &amp; Self-Expression</h3>
+      <div class="statement-row">
+        <span class="statement-text">I am clear about what I stand for.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I speak my truth even when vulnerable.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">My external expression reflects my inner identity.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="statement-row">
+        <span class="statement-text">I do not shrink under pressure.</span>
+        <div class="statement-score"></div>
+      </div>
+      <div class="section-score-row">
+        <span class="section-score-label">Section Score:</span>
+        <div class="section-score-box"></div>
+        <span style="font-size: 0.72rem; color: #8a7d9a; margin-left: 4px;">/ 100</span>
+      </div>
+    </div>
+
+    <!-- Overall Score -->
+    <div class="overall-score">
+      <span>Overall Score</span>
+      <div class="score-box"></div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p class="brand">J&A Business Advisory & Coaching</p>
+      <p>align@jabusinesscoaching.com</p>
+    </div>
+
+  </div>
+</body>
+</html>

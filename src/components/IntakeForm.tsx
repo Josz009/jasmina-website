@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import IntakeSliderGroup from "./IntakeSliderGroup";
 
 const STORAGE_KEY = "ja-intake-draft";
+const SESSION_KEY = "ja-intake-session";
 const STEP_LABELS = ["Personal Info", "Reflection", "Assessment I", "Assessment II", "Review"];
 
 const assessmentSections = [
@@ -128,8 +129,10 @@ const defaultFields: FormFields = {
 
 export default function IntakeForm() {
   const searchParams = useSearchParams();
-  const sessionId = searchParams.get("session_id");
+  const sessionIdFromUrl = searchParams.get("session_id");
+  const [sessionId, setSessionId] = useState<string | null>(null);
 
+  const [hydrated, setHydrated] = useState(false);
   const [currentStep, setCurrentStep] = useState(0);
   const [fields, setFields] = useState<FormFields>(defaultFields);
   const [sliders, setSliders] = useState<Record<string, number>>(getDefaultSliders);
@@ -137,7 +140,7 @@ export default function IntakeForm() {
   const [submitting, setSubmitting] = useState(false);
   const stepRef = useRef<HTMLDivElement>(null);
 
-  // Load saved draft from localStorage
+  // Load saved draft + session from localStorage
   useEffect(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
@@ -150,6 +153,19 @@ export default function IntakeForm() {
     } catch {
       // ignore
     }
+
+    // Resolve session_id: prefer URL param, fall back to localStorage
+    if (sessionIdFromUrl) {
+      setSessionId(sessionIdFromUrl);
+      try { localStorage.setItem(SESSION_KEY, sessionIdFromUrl); } catch { /* ignore */ }
+    } else {
+      try {
+        const saved = localStorage.getItem(SESSION_KEY);
+        if (saved) setSessionId(saved);
+      } catch { /* ignore */ }
+    }
+    setHydrated(true);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Auto-save to localStorage
@@ -288,6 +304,7 @@ export default function IntakeForm() {
       if (res.ok) {
         setSubmitted(true);
         localStorage.removeItem(STORAGE_KEY);
+        localStorage.removeItem(SESSION_KEY);
       } else {
         alert("Something went wrong. Please email align@jabusinesscoaching.com directly.");
       }
@@ -298,8 +315,8 @@ export default function IntakeForm() {
     setSubmitting(false);
   };
 
-  // ── Gate: no session_id ──
-  if (!sessionId) {
+  // ── Gate: no session_id (only shown after client hydration to avoid flash) ──
+  if (hydrated && !sessionId) {
     return (
       <div>
         <Navigation />
