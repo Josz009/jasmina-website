@@ -293,7 +293,7 @@ export default function IntakeForm() {
     });
 
     formData.append("Overall Assessment Score", `${getOverallScore()}/100`);
-    formData.append("Stripe Session ID", sessionId || "N/A");
+    formData.append("Square Payment Reference", sessionId || "N/A");
 
     try {
       const res = await fetch("https://api.web3forms.com/submit", {
