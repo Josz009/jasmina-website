@@ -28,6 +28,7 @@ function mapPost(raw: Record<string, unknown>): BlogPost {
     category: String(raw.category ?? ""),
     date: raw.publishedAt ? formatDate(String(raw.publishedAt)) : "",
     image,
+    readTime: raw.readTime ? String(raw.readTime) : undefined,
   };
 }
 

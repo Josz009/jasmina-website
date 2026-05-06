@@ -11,6 +11,7 @@ export const blogPost = defineType({
     defineField({ name: "coverImage", title: "Cover Image", type: "image", options: { hotspot: true } }),
     defineField({ name: "publishedAt", title: "Published At", type: "datetime" }),
     defineField({ name: "category", title: "Category", type: "string" }),
+    defineField({ name: "readTime", title: "Read Time (e.g. '5 min read')", type: "string" }),
     defineField({
       name: "body",
       title: "Body",
