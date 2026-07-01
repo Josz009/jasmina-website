@@ -68,7 +68,7 @@ export default function Navigation() {
                 </Link>
               </div>
             </div>
-            <Link href="/blog">Insights</Link>
+            <Link href="/blog">Blog</Link>
             {/* <Link href="/resources">Resources</Link> */}
             {/* <Link href="/faq">FAQ</Link> */}
             <Link href={isHome ? "#contact" : "/#contact"} className="nav-cta"
@@ -103,7 +103,7 @@ export default function Navigation() {
         <Link href="/services/portfolio-advisory" onClick={() => setMenuOpen(false)}>AR Portfolio & Trading Advisory</Link>
         <Link href="/services/entrepreneur-coaching" onClick={() => setMenuOpen(false)}>1-1 Intensive Coaching</Link>
         <Link href="/align-method" onClick={() => setMenuOpen(false)} className="mobile-align-link">The ALIGN Method&trade;</Link>
-        <Link href="/blog" onClick={() => setMenuOpen(false)}>Insights</Link>
+        <Link href="/blog" onClick={() => setMenuOpen(false)}>Blog</Link>
         {/* <Link href="/resources" onClick={() => setMenuOpen(false)}>Resources</Link> */}
         {/* <Link href="/faq" onClick={() => setMenuOpen(false)}>FAQ</Link> */}
         <Link href="/#contact" onClick={() => setMenuOpen(false)}>Contact</Link>

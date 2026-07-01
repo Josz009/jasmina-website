@@ -22,6 +22,13 @@ const testimonials = [
     role: "",
     image: "",
   },
+  {
+    quote:
+      "As someone building my own business for the first time, Jasmina's support has been much more than business coaching.\n\nWorking with her has opened up new perspectives and ways of seeing things that I simply wasn't aware of before. With her gentleness, empathy, and genuine presence, she creates a space where I can see myself more clearly. She has an exceptional ability to notice subtle patterns in the way I communicate and express myself—things I do unconsciously, yet that reveal valuable insights about my beliefs, values, and potential.\n\nWhat I appreciate most is that she truly meets me where I am and adapts to my process. Through our sessions, I have been uncovering the values that form the foundation of my business and creating something that feels deeply aligned with who I am.\n\nAt the same time, Jasmina has helped me develop a much healthier relationship with business and money by recognizing and transforming beliefs that were no longer serving me. As a result, I am stepping into my new role as an entrepreneur with far greater ease, confidence, and trust.\n\nI wholeheartedly recommend Jasmina to anyone who wants to build a business that is not only successful, but also deeply aligned with who they are and the impact they want to create.",
+    author: "Marina Mateska",
+    role: "ICF Coach & Regenerative Facilitator",
+    image: "",
+  },
 ];
 
 export default function Testimonials() {
